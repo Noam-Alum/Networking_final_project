@@ -2,21 +2,33 @@
 
 >  **Harel college networking final project**
 
+![Hero](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk6oYrfFWIv5Ft4S-WW9iO1vCD3od0GoPPxw&s)
+
 Need to remember:
 
-1. **Cisco Packet Tracer version:** `8.2.2.0400`
+- **Cisco Packet Tracer version:** `8.2.2.0400`
 
-## Done
+# Change log
 
-1. Three simple *ROS* buildings in Europe. (I'm done with Europe)
+## Packet Tracer
 
-## TODO
+| Date   | What has changed?                                              |
+|--------|----------------------------------------------------------------|
+| Oct 14 | Three simple *ROS* buildings in Europe. (I'm done with Europe) |
 
-### PT
+### TODO
 
-1. Add 1 complex building.
+- [ ] Create a complex building.
+- [ ] Create another complex building.
+- [ ] Duplicate each building twice in its continent.
 
-### Book report
+## Book report 
+
+| Date   | What has changed?                                              |
+|--------|----------------------------------------------------------------|
+| Oct 16 | Added organizational chart for each continent.                 |
+
+### TODO
 
 - [x] Broadcast and Collision Domains     
 - [x] DHCP
