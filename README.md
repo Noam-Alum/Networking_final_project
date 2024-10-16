@@ -85,4 +85,4 @@ Need to remember:
 - [ ] PoE
 - [ ] Static Routing , Dynamic Routing
 - [ ] Etherchannel
-- [x] Message types****
+- [x] Message types
