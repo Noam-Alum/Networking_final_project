@@ -24,7 +24,7 @@ Need to remember:
 
 ## Book report
 
-> Transitioning to Word online.
+> Transitioning to [Word online](https://onedrive.live.com/personal/2ecabe0268a35d2e/_layouts/15/doc.aspx?resid=d8bbab17-f572-49c3-8617-7baca1c1393e&cid=2ecabe0268a35d2e&ct=1729062813751&wdOrigin=OFFICECOM-WEB.START.EDGEWORTH&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=472810ab-2185-4dd6-a2a8-b920f3f3f26e).
 
 | Date   | What has changed?                                              |
 |--------|----------------------------------------------------------------|
