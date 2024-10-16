@@ -13,7 +13,7 @@ Need to remember:
 ## Packet Tracer
 
 | Date   | What has changed?                                              |
-|--------|----------------------------------------------------------------|
+| ------ | -------------------------------------------------------------- |
 | Oct 14 | Three simple *ROS* buildings in Europe. (I'm done with Europe) |
 | Oct 16 | Added images to each cluster.                                  |
 
@@ -27,18 +27,18 @@ Need to remember:
 
 ## Book report
 
-| Date   | What has changed?                                              |
-|--------|----------------------------------------------------------------|
-| Oct 16 | Added organizational chart for each continent.                 |
+| Date   | What has changed?                              |
+| ------ | ---------------------------------------------- |
+| Oct 16 | Added organizational chart for each continent. |
 
 ### TODO
 
 > [!IMPORTANT]
->
+> 
 > **Australia** is not part of **Asia** !
 > 
 > - [ ] Update Final_project.docx
-> - [ ] Update IP-dist.pdf
+> - [x] Update IP-dist.pdf
 
 - [x] Broadcast and Collision Domains     
 - [x] DHCP
@@ -85,4 +85,4 @@ Need to remember:
 - [ ] PoE
 - [ ] Static Routing , Dynamic Routing
 - [ ] Etherchannel
-- [x] Message types
+- [x] Message types****
