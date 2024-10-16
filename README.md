@@ -23,6 +23,8 @@ Need to remember:
 - [ ] Create another complex building.
 - [ ] Duplicate each building twice in its continent.
 
+<br><hr><br>
+
 ## Book report
 
 | Date   | What has changed?                                              |
