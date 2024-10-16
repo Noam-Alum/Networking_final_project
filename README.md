@@ -22,7 +22,9 @@ Need to remember:
 - [ ] Create another complex building.
 - [ ] Duplicate each building twice in its continent.
 
-## Book report 
+## Book report
+
+> Transitioning to Word online.
 
 | Date   | What has changed?                                              |
 |--------|----------------------------------------------------------------|
