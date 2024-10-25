@@ -12,14 +12,15 @@ Need to remember:
 
 ## Packet Tracer
 
-| Date   | What has changed?                                              |
-| ------ | -------------------------------------------------------------- |
-| Oct 14 | Three simple *ROS* buildings in Europe. (I'm done with Europe) |
-| Oct 16 | Added images to each cluster.                                  |
+| Date   | What has changed?                                                                         |
+| ------ | ------------------------------------------------------------------------------------------|
+| Oct 14 | Three simple *ROS* buildings in Europe. (I'm done with Europe)                            |
+| Oct 16 | Added images to each cluster.                                                             |
+| Oct 25 | Added a complext building, including HTML project website, HSRP, DHCP Server, DNS server. |
 
 ### TODO
 
-- [ ] Create a complex building.
+- [x] Create a complex building.
 - [ ] Create another complex building.
 - [ ] Duplicate each building twice in its continent.
 
@@ -37,7 +38,7 @@ Need to remember:
 > 
 > **Australia** is not part of **Asia** !
 > 
-> - [ ] Update Final_project.docx
+> - [x] Update Final_project.docx
 > - [x] Update IP-dist.pdf
 
 - [x] Broadcast and Collision Domains     

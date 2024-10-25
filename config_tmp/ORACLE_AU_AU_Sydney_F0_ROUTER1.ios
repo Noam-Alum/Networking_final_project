@@ -1,0 +1,104 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_AU_AU_Sydney_F0_ROUTER1
+!
+no logging on
+!
+!
+!
+!
+ip dhcp pool Product_Management_POOL
+ default-router 172.18.67.254
+ dns-server 8.8.8.8
+ip dhcp pool Production_POOL
+ default-router 172.18.69.254
+ dns-server 8.8.8.8
+ip dhcp pool Project_Management_Office_POOL
+ default-router 172.18.71.254
+ dns-server 8.8.8.8
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO1941/K9 sn FTX1524ZQ2N-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/1/0
+ no ip address
+!
+interface GigabitEthernet0/1/0.20
+ encapsulation dot1Q 20
+ ip address 172.18.65.254 255.255.254.0
+!
+interface GigabitEthernet0/1/0.30
+ encapsulation dot1Q 30
+ ip address 172.18.67.254 255.255.254.0
+!
+interface GigabitEthernet0/1/0.40
+ encapsulation dot1Q 40
+ ip address 172.18.69.254 255.255.254.0
+!
+interface GigabitEthernet0/1/0.101
+ encapsulation dot1Q 101
+ ip address 172.18.71.254 255.255.254.0
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
