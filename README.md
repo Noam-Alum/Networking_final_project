@@ -16,7 +16,8 @@ Need to remember:
 | ------ | ---------------------------------------------------------------------------------------------------------------------|
 | Oct 14 | Three simple *ROS* buildings in Europe. (I'm done with Europe)                                                       |
 | Oct 16 | Added images to each cluster.                                                                                        |
-| Oct 25 | Added a complext building, including [HTML project website](https://project.alum.sh), HSRP, DHCP Server, DNS server. |
+| Oct 25 | Added a complex building, including [HTML project website](https://project.alum.sh), HSRP, DHCP Server, DNS server.  |
+| Oct 25 | Added port-security to complex building.                                                                             |
 
 ### TODO
 
