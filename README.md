@@ -18,6 +18,7 @@ Need to remember:
 | Oct 16 | Added images to each cluster.                                                                                        |
 | Oct 25 | Added a complex building, including [HTML project website](https://project.alum.sh), HSRP, DHCP Server, DNS server.  |
 | Oct 25 | Added port-security to complex building.                                                                             |
+| Oct 26 | Duplicated complex building to india.                                                                                |
 
 ### TODO
 
