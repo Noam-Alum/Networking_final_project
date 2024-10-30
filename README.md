@@ -30,28 +30,27 @@ Need to remember:
 
 ## Book report
 
-| Date   | What has changed?                              |
-| ------ | ---------------------------------------------- |
-| Oct 16 | Added organizational chart for each continent. |
+| Date   | What has changed?                                                                    |
+| ------ | ------------------------------------------------------------------------------------ |
+| Oct 16 | Added organizational chart for each continent.                                       |
+| Oct 30 | Added pages regarding all simple buildings and the buildings in Australia and India. |
 
 ### TODO
 
 > [!IMPORTANT]
-> 
-> **Australia** is not part of **Asia** !
-> 
-> - [x] Update Final_project.docx
-> - [x] Update IP-dist.pdf
+> - [ ] Etherchannel
+> - [ ] HSRP
+> - [ ] AAA
 
 - [x] Broadcast and Collision Domains     
 - [x] DHCP
 - [x] VLAN
-- [ ] HTTP
-- [ ] DNS
+- [x] HTTP
+- [x] DNS
 - [ ] ACL
 - [ ] EIGRP
-- [x] OSPF
-- [x] NAT
+- [ ] OSPF
+- [ ] NAT
 - [x] STP
 - [x] ARP
 - [ ] FTP
@@ -60,7 +59,7 @@ Need to remember:
 - [ ] TELNET
 - [ ] TCP/UDP
 - [ ] ICMP/PING
-- [ ] Port Security
+- [x] Port Security
 - [x] DTP
 - [ ] VTP
 - [x] MAC
@@ -69,23 +68,20 @@ Need to remember:
 - [x] LAN
 - [ ] WAN
 - [x] Model TCP/IP
-- [ ] Model OSI
-- [ ] Simple building
-- [ ] Complex building
+- [x] Model OSI
+- [x] Simple building
+- [x] Complex building
 - [x] Media types
 - [ ] Binary, Hex, etc
-- [ ] IP distebution
+- [x] IP distebution
 - [ ] Trunk & Access
-- [ ] Router on stick
 - [ ] BGP
 - [x] NAT
 - [ ] DMZ
 - [ ] VPN
 - [ ] IPSec
 - [ ] NTP
-- [ ] AAA
 - [ ] Wifi - Wireless Networks
 - [ ] PoE
 - [ ] Static Routing , Dynamic Routing
-- [ ] Etherchannel
 - [x] Message types
