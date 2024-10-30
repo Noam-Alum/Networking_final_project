@@ -22,7 +22,7 @@ Need to remember:
 | Oct 25 | Added a complex building, including [HTML project website](https://project.alum.sh), HSRP, DHCP Server, DNS server.  |
 | Oct 25 | Added port-security to complex building.                                                                             |
 | Oct 26 | Duplicated complex building to India.                                                                                |
-| Oct 30 | Duplicated simple building to Japan. (I'm done with Asia + Australia) |
+| Oct 30 | Duplicated simple building to Japan. (After configuring AAA, I'm done with Asia + Australia) |
 
 ### TODO
 
