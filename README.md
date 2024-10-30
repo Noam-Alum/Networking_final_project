@@ -52,6 +52,8 @@ Need to remember:
 
 ### TODO
 
+- [ ] The second complex building pages.
+
 > [!IMPORTANT]
 > - [ ] A page for each device with the following:
 > 	1. Image of the device
@@ -70,25 +72,19 @@ Need to remember:
 > - [ ] HSRP
 > - [ ] **AAA**
 
-- [ ] Banner
+**Has to be included**
 - [ ] **Vlan hopping**
 - [x] Broadcast and Collision Domains     
 - [x] DHCP
 - [x] VLAN
 - [x] HTTP
 - [x] DNS
-- [ ] ACL
-- [ ] EIGRP
-- [ ] OSPF
-- [ ] NAT
 - [x] STP
 - [x] ARP
 - [ ] FTP
 - [ ] EMAIL
 - [ ] **SSH**
 - [ ] **TELNET**
-- [ ] TCP/UDP
-- [ ] ICMP/PING
 - [x] Port Security
 - [x] DTP
 - [ ] VTP
@@ -96,22 +92,34 @@ Need to remember:
 - [x] IPv4
 - [x] Subnetting, VLSM/CIDR
 - [x] LAN
-- [ ] WAN
 - [x] Model TCP/IP
 - [x] Model OSI
 - [x] Simple building
 - [x] Complex building
 - [x] Media types
-- [ ] Binary, Hex, etc
 - [x] IP distebution
-- [ ] Trunk & Access
-- [ ] BGP
 - [x] NAT
-- [ ] DMZ
+- [ ] NTP
+- [x] Message types
+
+**Can be added:**
+
+- [ ] Trunk & Access
+- [ ] Binary, Hex, etc
+- [ ] Banner
+- [ ] ICMP/PING
+- [ ] TCP/UDP
+
+### To be added - WAN
+
+- [ ] Static Routing , Dynamic Routing
+- [ ] Wifi - Wireless Networks
+- [ ] WAN
 - [ ] VPN
 - [ ] IPSec
-- [ ] NTP
-- [ ] Wifi - Wireless Networks
-- [ ] PoE
-- [ ] Static Routing , Dynamic Routing
-- [x] Message types
+- [ ] BGP
+- [ ] ACL
+- [ ] EIGRP
+- [ ] OSPF
+- [ ] NAT
+
