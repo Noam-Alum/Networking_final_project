@@ -7,6 +7,9 @@
 Need to remember:
 
 - **Cisco Packet Tracer version:** `8.2.2.0400`
+> For routers and switchs using an AAA server
+> - **Username**: admin
+> - **Password**: 1234
 
 # Change log
 
@@ -18,7 +21,8 @@ Need to remember:
 | Oct 16 | Added images to each cluster.                                                                                        |
 | Oct 25 | Added a complex building, including [HTML project website](https://project.alum.sh), HSRP, DHCP Server, DNS server.  |
 | Oct 25 | Added port-security to complex building.                                                                             |
-| Oct 26 | Duplicated complex building to india.                                                                                |
+| Oct 26 | Duplicated complex building to India.                                                                                |
+| Oct 30 | Duplicated simple building to Japan. (I'm done with Asia + Australia) |
 
 ### TODO
 
