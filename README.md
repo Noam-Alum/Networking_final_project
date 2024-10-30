@@ -38,10 +38,25 @@ Need to remember:
 ### TODO
 
 > [!IMPORTANT]
+> - [ ] A page for each device with the following:
+> 	1. Image of the device
+>	2. Full name
+>	3. Table with details (e.g. amount of ram for computers, etc )
+>	4. Price (Check price tables from each building to match the price)
+>
+>	**List of all devices:**
+>	- [ ] PC
+>	- [ ] Laptop
+>	- [ ] Server
+>	- [ ] Cisco 1941
+>	- [ ] Cisco 3650 24PS
+>	- [ ] Cisco 2960-24TT
 > - [ ] Etherchannel
 > - [ ] HSRP
-> - [ ] AAA
+> - [ ] **AAA**
 
+- [ ] Banner
+- [ ] **Vlan hopping**
 - [x] Broadcast and Collision Domains     
 - [x] DHCP
 - [x] VLAN
@@ -55,8 +70,8 @@ Need to remember:
 - [x] ARP
 - [ ] FTP
 - [ ] EMAIL
-- [ ] SSH
-- [ ] TELNET
+- [ ] **SSH**
+- [ ] **TELNET**
 - [ ] TCP/UDP
 - [ ] ICMP/PING
 - [x] Port Security
