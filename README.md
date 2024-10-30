@@ -24,6 +24,21 @@ Need to remember:
 
 - [x] Create a complex building.
 - [ ] Create another complex building.
+	**Use the following:**
+	servers:
+	- [ ] FTP
+	- [ ] MAIL
+	- [ ] SNMP
+	- [ ] SYSLOG
+	- [ ] NTP
+
+	protocols/configurations:
+	- [ ] etherchannel
+	- [ ] portfast
+	- [ ] bpdu guard
+	- [ ] use STP with a **root bridge** for each vlan and add this to the **book report**.
+	- [ ] Use the NTP server.
+	- [ ] Use the syslog server.
 - [ ] Duplicate each building twice in its continent.
 
 <br><hr><br>
