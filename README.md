@@ -23,8 +23,8 @@ Need to remember:
 ### TODO
 
 - [x] Create a complex building.
-- [ ] Create another complex building.
-	**Use the following:**
+- [ ] Create another complex building.<br>
+	**Use the following:**<br>
 	servers:
 	- [ ] FTP
 	- [ ] MAIL
