@@ -1,5 +1,12 @@
 # Networking final project
 
+> [!IMPORTANT]
+> # Yoel wants and I dont have
+> - [ ] Access
+> - [ ] Trunk
+> - [ ] VTP
+> - [ ] ROS
+
 >  **Harel college networking final project**
 
 ![Hero](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk6oYrfFWIv5Ft4S-WW9iO1vCD3od0GoPPxw&s)
@@ -92,7 +99,6 @@ Need to remember:
 - [x] **TELNET**
 - [x] Port Security
 - [x] DTP
-- [ ] VTP
 - [x] MAC
 - [x] IPv4
 - [x] Subnetting, VLSM/CIDR
@@ -109,7 +115,6 @@ Need to remember:
 
 **Can be added:**
 
-- [ ] Trunk & Access
 - [ ] Binary, Hex, etc
 - [ ] Banner
 - [ ] ICMP/PING
