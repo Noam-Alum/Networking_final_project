@@ -53,6 +53,7 @@ Need to remember:
 | ------ | ------------------------------------------------------------------------------------ |
 | Oct 16 | Added organizational chart for each continent.                                       |
 | Oct 30 | Added pages regarding all simple buildings and the buildings in Australia and India. |
+| Oct 31 | Added pages on SSH and TELNET and changed first building (simple) pages to include Japan and Vriginia |
 
 ### TODO
 
@@ -72,9 +73,9 @@ Need to remember:
 >	- [ ] Cisco 1941
 >	- [ ] Cisco 3650 24PS
 >	- [ ] Cisco 2960-24TT
-> - [ ] Etherchannel
-> - [ ] HSRP
-> - [ ] **AAA**
+> - [x] Etherchannel
+> - [x] HSRP
+> - [x] **AAA**
 
 **Has to be included**
 - [ ] **Vlan hopping**
@@ -87,8 +88,8 @@ Need to remember:
 - [x] ARP
 - [ ] FTP
 - [ ] EMAIL
-- [ ] **SSH**
-- [ ] **TELNET**
+- [x] **SSH**
+- [x] **TELNET**
 - [x] Port Security
 - [x] DTP
 - [ ] VTP
