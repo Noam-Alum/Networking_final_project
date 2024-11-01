@@ -41,7 +41,7 @@ Need to remember:
 	- [ ] MAIL
 	- [ ] SYSLOG
 	- [ ] NTP
-	- [x] DHCP
+	- [ ] DHCP
 
 	protocols/configurations:
 	- [x] etherchannel
@@ -85,7 +85,7 @@ Need to remember:
 > - [x] **AAA**
 
 **Has to be included**
-- [ ] **Vlan hopping**
+- [x] **Vlan hopping**
 - [x] Broadcast and Collision Domains     
 - [x] DHCP
 - [x] VLAN
