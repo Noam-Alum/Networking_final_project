@@ -35,20 +35,23 @@ Need to remember:
 
 - [x] Create a complex building.
 - [ ] Create another complex building.<br>
+
+	> [!NOTE]
+	> Issue with vlans between certain switches.
+
 	**Use the following:**<br>
 	servers:
 	- [ ] FTP
 	- [ ] MAIL
 	- [ ] SYSLOG
-	- [ ] NTP
-	- [ ] DHCP
+	- [x] DHCP
 
 	protocols/configurations:
-	- [ ] etherchannel
-	- [ ] portfast
-	- [ ] bpdu guard
+	- [x] etherchannel
+	- [x] portfast
+	- [x] bpdu guard
+	- [x] use HSRP load balancing.
 	- [ ] use STP with a **root bridge** for each vlan and add this to the **book report**.
-	- [ ] Use the NTP server.
 	- [ ] Use the syslog server.
 - [ ] Duplicate each building twice in its continent.
 
