@@ -36,9 +36,6 @@ Need to remember:
 - [x] Create a complex building.
 - [ ] Create another complex building.<br>
 
-> [!NOTE]
-> Issue with vlans between certain switches.
-
 	**Use the following:**<br>
 	servers:
 	- [ ] FTP
@@ -53,6 +50,10 @@ Need to remember:
 	- [x] use HSRP load balancing.
 	- [ ] use STP with a **root bridge** for each vlan and add this to the **book report**.
 	- [ ] Use the syslog server.
+
+> [!NOTE]
+> Issue with vlans between certain switches.
+
 - [ ] Duplicate each building twice in its continent.
 
 <br><hr><br>
