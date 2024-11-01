@@ -36,8 +36,8 @@ Need to remember:
 - [x] Create a complex building.
 - [ ] Create another complex building.<br>
 
-	> [!NOTE]
-	> Issue with vlans between certain switches.
+> [!NOTE]
+> Issue with vlans between certain switches.
 
 	**Use the following:**<br>
 	servers:
