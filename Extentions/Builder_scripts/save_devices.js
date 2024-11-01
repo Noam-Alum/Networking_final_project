@@ -47,7 +47,33 @@ let devices = [
     "ORACLE_AU_AU_Sydney_F3_SW_Access",
     "ORACLE_AU_AU_Sydney_F2_SW_Access",
     "ORACLE_AU_AU_Sydney_F1_SW_Access",
-    "ORACLE_AU_AU_Sydney_F0_SW_Access"
+    "ORACLE_AU_AU_Sydney_F0_SW_Access",
+
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Core1",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Core2",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Core3",
+    "ORACLE_US_AZ_Phoenix_F0_ROUTER1",
+    "ORACLE_US_AZ_Phoenix_F0_ROUTER2",
+    "ORACLE_US_AZ_Phoenix_F0_ROUTER3",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Distribution1",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Distribution2",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Distribution3",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Distribution4",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Distribution5",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer_Distribution6",
+    "ORACLE_US_AZ_Phoenix_F0_SW_Multilayer1",
+    "ORACLE_US_AZ_Phoenix_F1_SW1",
+    "ORACLE_US_AZ_Phoenix_F1_SW2",
+    "ORACLE_US_AZ_Phoenix_F2_SW1",
+    "ORACLE_US_AZ_Phoenix_F2_SW2",
+    "ORACLE_US_AZ_Phoenix_F3_SW1",
+    "ORACLE_US_AZ_Phoenix_F3_SW2",
+    "ORACLE_US_AZ_Phoenix_F4_SW1",
+    "ORACLE_US_AZ_Phoenix_F4_SW2",
+    "ORACLE_US_AZ_Phoenix_F5_SW1",
+    "ORACLE_US_AZ_Phoenix_F5_SW2",
+    "ORACLE_US_AZ_Phoenix_F5_SW3",
+    "ORACLE_US_AZ_Phoenix_F5_SW4"
 ];
 
 for (let deviceName of devices) {

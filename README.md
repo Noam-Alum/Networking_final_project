@@ -2,10 +2,10 @@
 
 > [!IMPORTANT]
 > # Yoel wants and I dont have
-> - [ ] Access
-> - [ ] Trunk
-> - [ ] VTP
-> - [ ] ROS
+> - [x] Access
+> - [x] Trunk
+> - [x] VTP
+> - [x] ROS
 
 >  **Harel college networking final project**
 
@@ -39,12 +39,12 @@ Need to remember:
 	servers:
 	- [ ] FTP
 	- [ ] MAIL
-	- [ ] SNMP
 	- [ ] SYSLOG
 	- [ ] NTP
+	- [x] DHCP
 
 	protocols/configurations:
-	- [ ] etherchannel
+	- [x] etherchannel
 	- [ ] portfast
 	- [ ] bpdu guard
 	- [ ] use STP with a **root bridge** for each vlan and add this to the **book report**.
@@ -67,19 +67,19 @@ Need to remember:
 - [ ] The second complex building pages.
 
 > [!IMPORTANT]
-> - [ ] A page for each device with the following:
+> - [x] A page for each device with the following:
 > 	1. Image of the device
 >	2. Full name
 >	3. Table with details (e.g. amount of ram for computers, etc )
 >	4. Price (Check price tables from each building to match the price)
 >
 >	**List of all devices:**
->	- [ ] PC
->	- [ ] Laptop
->	- [ ] Server
->	- [ ] Cisco 1941
->	- [ ] Cisco 3650 24PS
->	- [ ] Cisco 2960-24TT
+>	- [x] PC (2,975)
+>	- [x] Laptop (2,975)
+>	- [x] Server (4,000)
+>	- [x] Cisco 1941 (800)
+>	- [x] Cisco 3650 24PS (4,200)
+>	- [x] Cisco 2960-24TT (1,750)
 > - [x] Etherchannel
 > - [x] HSRP
 > - [x] **AAA**
@@ -132,4 +132,3 @@ Need to remember:
 - [ ] EIGRP
 - [ ] OSPF
 - [ ] NAT
-
