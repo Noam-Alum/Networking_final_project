@@ -44,7 +44,7 @@ Need to remember:
 	- [ ] DHCP
 
 	protocols/configurations:
-	- [x] etherchannel
+	- [ ] etherchannel
 	- [ ] portfast
 	- [ ] bpdu guard
 	- [ ] use STP with a **root bridge** for each vlan and add this to the **book report**.
