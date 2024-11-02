@@ -48,7 +48,7 @@ Need to remember:
 	- [x] bpdu guard
 	- [x] use HSRP load balancing.
 	- [x] use STP with a **root bridge** for each vlan and add this to the **book report**.
-	- [ ] Use the syslog server.
+	- [x] Use the syslog server.
 
 > [!NOTE]
 > Issue with HSRP in Arizona.
