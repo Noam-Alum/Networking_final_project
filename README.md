@@ -34,13 +34,12 @@ Need to remember:
 ### TODO
 
 - [x] Create a complex building.
-- [ ] Create another complex building.<br>
-
+- [x] Create another complex building.<br>
 	**Use the following:**<br>
 	servers:
-	- [ ] FTP
-	- [ ] MAIL
-	- [ ] SYSLOG
+	- [x] FTP
+	- [x] MAIL
+	- [x] SYSLOG
 	- [x] DHCP
 
 	protocols/configurations:
@@ -48,13 +47,13 @@ Need to remember:
 	- [x] portfast
 	- [x] bpdu guard
 	- [x] use HSRP load balancing.
-	- [ ] use STP with a **root bridge** for each vlan and add this to the **book report**.
+	- [x] use STP with a **root bridge** for each vlan and add this to the **book report**.
 	- [ ] Use the syslog server.
 
 > [!NOTE]
-> Issue with vlans between certain switches.
+> Issue with HSRP in Arizona.
 
-- [ ] Duplicate each building twice in its continent.
+- [x] Duplicate each building twice in its continent.
 
 <br><hr><br>
 
@@ -68,7 +67,7 @@ Need to remember:
 
 ### TODO
 
-- [ ] The second complex building pages.
+- [x] The second complex building pages.
 
 > [!IMPORTANT]
 > - [x] A page for each device with the following:
@@ -97,8 +96,8 @@ Need to remember:
 - [x] DNS
 - [x] STP
 - [x] ARP
-- [ ] FTP
-- [ ] EMAIL
+- [x] FTP
+- [x] EMAIL
 - [x] **SSH**
 - [x] **TELNET**
 - [x] Port Security
@@ -114,8 +113,8 @@ Need to remember:
 - [x] Media types
 - [x] IP distebution
 - [x] NAT
-- [ ] NTP
 - [x] Message types
+- [x] syslog
 
 **Can be added:**
 
