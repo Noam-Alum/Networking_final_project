@@ -44,17 +44,135 @@
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Oct 16 | Added organizational chart for each continent.                                                                                               |
 | Oct 30 | Added pages regarding all simple buildings and the buildings in Australia and India.                                                         |
-| Oct 31 | Added pages on SSH and TELNET and changed first building (simple) pages to include Japan and Vriginia                                        |
+| Oct 31 | Added pages on SSH and TELNET and changed first building (simple) pages to include Japan and Virginia                                        |
 | Nov 3  | Removed pages Yoel didnt like, and changed how the project looks, currently at 30%-ish done with fixing the book report for *Yoels likings*. |
 
 ### TODO
 
-- [ ] Fix book report.
+- [ ] Stuff to re-write:
+  
+  - [ ] Vlan
+    
+    > Write the commands I ran in PT for one of the buildings and show the distribution.
+  
+  - [ ] VTP
+    
+    > Very important to document every command and show it works.
+  
+  - [ ] Vlan hopping
+    
+    > Need to write a POC.
+  
+  - [ ] DHCP
+    
+    > Same as Vlan, show creation of DHCP pools for each floor and show how it distributes over the building.
+  
+  - [ ] DHCP spoofing
+    
+    > Need a POC.
+  
+  - [ ] Router on a stick
+    
+    > Check what Baron did and do the same.
+  
+  - [ ] STP
+    
+    > - Write about STP load-balancing, write the commands like Vlan, then Show commands.
+    > 
+    > - Write about STP attacks and then show PORTFAST + BPDU GUARD.
+  
+  - [ ] EtherChannle
+    
+    > Write the commands I ran like Vlan.
+  
+  - [x] HSRP
+  
+  - [ ] DTP
+    
+    > - What is it.
+    > - How to configure with commands I ran in PT.
+    > - Show commands.
+    > - DTP attack
+    > - How to protect.
+  
+  - [ ] VTP
+    
+    > - What is it.
+    > - How to configure with commands I ran in PT.
+    > - Show commands.
+    > - VTP attack
+    > - How to protect.
+  
+  - [ ] Telnet
+    
+    > Check what Baron did.
+  
+  - [ ] SSH
+    
+    > Check what Baron did.
+  
+  - [ ] Servers (DHCP, DNS, HTTP, etc)
+    
+    > Make it prettier.
+  
+  - [ ] Stuff to write:
+    
+    - [ ] Passwords table.
+      
+      > A table with all passwords an locations in the Project.
+    
+    - [ ] DHCP starvation.
+      
+      > Explanation & POC
+    
+    - [ ] SQL injections.
+      
+      > Explanation & POC
+    
+    - [ ] Fishing.
+      
+      > Explanation & POC
+    
+    - [ ] DOS & DDOS.
+      
+      > Explanation & POC
+    
+    - [ ] Man in the middle.
+      
+      > Explanation & POC
+    
+    - [ ] Mac flooding.
+      
+      > Explanation & POC
+    
+    - [ ] CXS attack.
+      
+      > Explanation & POC
+    
+    - [ ] Ransomware.
+      
+      > Explanation & POC
+    
+    - [ ] Zero day.
+      
+      > Explanation & POC
+    
+    - [ ] Brute Force Attack.
+      
+      > Explanation & POC
+    
+    - [ ] DNS Spoofing.
+      
+      > Explanation & POC
+    
+    - [ ] Network sniffing.
+      
+      > Explanation & POC
 
 ### To be added - WAN
 
 - [ ] Static Routing , Dynamic Routing
-- [ ] Wifi - Wireless Networks
+- [ ] WIFI - Wireless Networks
 - [ ] WAN
 - [ ] VPN
 - [ ] IPSec
