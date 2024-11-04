@@ -114,60 +114,60 @@
   - [ ] Servers (DHCP, DNS, HTTP, etc)
     
     > Make it prettier.
+
+- [ ] Stuff to write:
   
-  - [ ] Stuff to write:
+  - [ ] Passwords table.
     
-    - [ ] Passwords table.
-      
-      > A table with all passwords an locations in the Project.
+    > A table with all passwords an locations in the Project.
+  
+  - [ ] DHCP starvation.
     
-    - [ ] DHCP starvation.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] SQL injections.
     
-    - [ ] SQL injections.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Fishing.
     
-    - [ ] Fishing.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] DOS & DDOS.
     
-    - [ ] DOS & DDOS.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Man in the middle.
     
-    - [ ] Man in the middle.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Mac flooding.
     
-    - [ ] Mac flooding.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] CXS attack.
     
-    - [ ] CXS attack.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Ransomware.
     
-    - [ ] Ransomware.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Zero day.
     
-    - [ ] Zero day.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Brute Force Attack.
     
-    - [ ] Brute Force Attack.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] DNS Spoofing.
     
-    - [ ] DNS Spoofing.
-      
-      > Explanation & POC
+    > Explanation & POC
+  
+  - [ ] Network sniffing.
     
-    - [ ] Network sniffing.
-      
-      > Explanation & POC
+    > Explanation & POC
 
 ### To be added - WAN
 
