@@ -54,7 +54,7 @@
 
 - [ ] Stuff to re-write:
   
-  - [ ] Vlan
+  - [x] Vlan
     
     > Write the commands I ran in PT for one of the buildings and show the distribution.
   
