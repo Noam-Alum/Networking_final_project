@@ -32,7 +32,7 @@
 
 - [ ] VTP on one building.
 
-- [ ] SSH on all devices.
+- [x] SSH on all devices.
 
 - [ ] AAA server. (servers?)
 
