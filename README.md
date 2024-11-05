@@ -24,6 +24,7 @@
 | Oct 26 | Duplicated complex building to India.                                                                               |
 | Oct 30 | Duplicated simple building to Japan. (After configuring AAA, I'm done with Asia + Australia)                        |
 | Nov 4  | Changed all routers in Complex topologies to PT-EMPTY                                                               |
+| Nov 5 | Changed all core switches to PT-EMPTY |
 
 ### TODO
 
@@ -37,7 +38,7 @@
 
 - [x] Swap routers on complex buildings to 6200 routers.
 
-- [ ] Swap all Core switches to PT empty
+- [x] Swap all Core switches to PT empty
 
 <br><hr><br>
 
