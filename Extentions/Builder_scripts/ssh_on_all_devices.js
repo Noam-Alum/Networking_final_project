@@ -77,5 +77,5 @@ let devices = [
 ];
 
 for (let deviceName of devices) {
-    configureIosDevice(deviceName, "do wr");
+    configureIosDevice(deviceName, "line vty 0 4\nlogin local\ntransport input ssh\nusername admin password 1234\nip domain-name oracle.com\ncrypto key generate rsa general-keys modulus 1024");
 }
