@@ -24,7 +24,7 @@
 | Oct 26 | Duplicated complex building to India.                                                                               |
 | Oct 30 | Duplicated simple building to Japan. (After configuring AAA, I'm done with Asia + Australia)                        |
 | Nov 4  | Changed all routers in Complex topologies to PT-EMPTY                                                               |
-| Nov 5 | Changed all core switches to PT-EMPTY |
+| Nov 5  | Changed all core switches to PT-EMPTY                                                                               |
 
 ### TODO
 
@@ -59,7 +59,7 @@
     
     > Write the commands I ran in PT for one of the buildings and show the distribution.
   
-  - [ ] VTP
+  - [x] VTP
     
     > Very important to document every command and show it works.
   
@@ -99,13 +99,12 @@
     > - DTP attack
     > - How to protect.
   
-  - [ ] VTP
+  - [x] VTP
     
     > - What is it.
     > - How to configure with commands I ran in PT.
     > - Show commands.
-    > - VTP attack
-    > - How to protect.
+    > - 
   
   - [ ] Telnet
     
