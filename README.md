@@ -79,7 +79,7 @@
     
     > Check what Baron did and do the same.
   
-  - [ ] STP
+  - [x] STP
     
     > - Write about STP load-balancing, write the commands like Vlan, then Show commands.
     > 
