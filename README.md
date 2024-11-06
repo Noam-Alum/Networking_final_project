@@ -71,7 +71,7 @@
     
     > Same as Vlan, show creation of DHCP pools for each floor and show how it distributes over the building.
   
-  - [ ] DHCP spoofing
+  - [x] DHCP spoofing
     
     > Need a POC.
   
