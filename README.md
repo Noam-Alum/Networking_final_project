@@ -75,7 +75,7 @@
     
     > Need a POC.
   
-  - [ ] Router on a stick
+  - [x] Router on a stick
     
     > Check what Baron did and do the same.
   
