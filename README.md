@@ -30,7 +30,7 @@
 
 - [ ] DTP on one building.
 
-- [ ] VTP on one building.
+- [x] VTP on one building.
 
 - [x] SSH on all devices.
 
@@ -63,11 +63,11 @@
     
     > Very important to document every command and show it works.
   
-  - [ ] Vlan hopping
+  - [x] Vlan hopping
     
     > Need to write a POC.
   
-  - [ ] DHCP
+  - [x] DHCP
     
     > Same as Vlan, show creation of DHCP pools for each floor and show how it distributes over the building.
   
