@@ -85,7 +85,7 @@
     > 
     > - Write about STP attacks and then show PORTFAST + BPDU GUARD.
   
-  - [ ] EtherChannle
+  - [x] EtherChannle
     
     > Write the commands I ran like Vlan.
   
@@ -106,11 +106,11 @@
     > - Show commands.
     > - 
   
-  - [ ] Telnet
+  - [x] Telnet
     
     > Check what Baron did.
   
-  - [ ] SSH
+  - [x] SSH
     
     > Check what Baron did.
   
