@@ -34,7 +34,7 @@
 
 - [x] SSH on all devices.
 
-- [ ] AAA server. (servers?)
+- [x] AAA servers.
 
 - [x] Swap routers on complex buildings to 6200 routers.
 
