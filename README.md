@@ -114,7 +114,7 @@
     
     > Check what Baron did.
   
-  - [ ] Servers (DHCP, DNS, HTTP, etc)
+  - [x] Servers (DHCP, DNS, HTTP, etc)
     
     > Make it prettier.
 
