@@ -6,9 +6,9 @@
 
 ### Flip books
 
-- [No mascot]([Online Flipbook](https://heyzine.com/flip-book/71b1c6bcc7.html))
+- [No mascot](https://heyzine.com/flip-book/71b1c6bcc7.html)
 
-- [With mascot]([With mascot | PDF to Flipbook](https://heyzine.com/flip-book/c802863a14.html))
+- [With mascot](https://heyzine.com/flip-book/c802863a14.html)
 
 
 
