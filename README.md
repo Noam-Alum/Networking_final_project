@@ -2,15 +2,11 @@
 
 ![Hero](https://monaghesatiran.ir/wp-content/uploads/2023/11/%D8%B1%D8%A7%D9%87-%D8%A7%D9%86%D8%AF%D8%A7%D8%B2%DB%8C-%D9%85%D9%86%D8%B7%D9%82%D9%87-%D8%A2%D8%B2%D8%A7%D8%AF-%D9%85%D8%B4%D8%AA%D8%B1%DA%A9-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-ICT-%D9%85%DB%8C%D8%A7%D9%86-%DA%A9%D8%B4%D9%88%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88-%D8%B9%D8%B1%D8%A7%D9%82.jpg)
 
-
-
 ### Flip books
 
 - [No mascot](https://heyzine.com/flip-book/71b1c6bcc7.html)
 
 - [With mascot](https://heyzine.com/flip-book/c802863a14.html)
-
-
 
 ### Need to remember:
 
@@ -38,7 +34,7 @@
 
 ### TODO
 
-- [ ] DTP on one building.
+- [x] DTP on one building.
 
 - [x] VTP on one building.
 
@@ -63,7 +59,7 @@
 
 ### TODO
 
-- [ ] Stuff to re-write:
+- [x] Stuff to re-write:
   
   - [x] Vlan
     
@@ -101,7 +97,7 @@
   
   - [x] HSRP
   
-  - [ ] DTP
+  - [x] DTP
     
     > - What is it.
     > - How to configure with commands I ran in PT.
