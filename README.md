@@ -4,9 +4,9 @@
 
 ### Flip books
 
-- [No mascot](https://heyzine.com/flip-book/d318205217.html)
+- [No mascot](https://heyzine.com/flip-book/5d514a64f0.html)
 
-- [With mascot](https://heyzine.com/flip-book/7692c52405.html)
+- [With mascot](https://heyzine.com/flip-book/4835a53510.html)
 
 ### Need to remember:
 
@@ -126,35 +126,11 @@
 
 - [ ] Stuff to write:
   
-  - [ ] Passwords table.
-    
-    > A table with all passwords an locations in the Project.
-  
-  - [ ] DHCP starvation.
-    
-    > Explanation & POC
-  
   - [ ] SQL injections.
     
     > Explanation & POC
   
-  - [ ] Fishing.
-    
-    > Explanation & POC
-  
-  - [ ] DOS & DDOS.
-    
-    > Explanation & POC
-  
-  - [ ] Man in the middle.
-    
-    > Explanation & POC
-  
-  - [ ] Mac flooding.
-    
-    > Explanation & POC
-  
-  - [ ] CXS attack.
+  - [x] XSS attack.
     
     > Explanation & POC
   
