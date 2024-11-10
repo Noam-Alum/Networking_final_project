@@ -4,7 +4,7 @@
 
 ### Flip books
 
-- [No mascot](https://heyzine.com/flip-book/5d514a64f0.html)
+- [No mascot](https://heyzine.com/flip-book/2c46bb040a.html)
 
 - [With mascot](https://heyzine.com/flip-book/4835a53510.html)
 
