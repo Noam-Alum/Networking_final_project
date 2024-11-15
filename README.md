@@ -4,10 +4,8 @@
 
 ### Flip books
 
-- [No mascot](https://heyzine.com/flip-book/2c46bb040a.html)
-
-- [With mascot](https://heyzine.com/flip-book/4835a53510.html)
-
+- [Book preview](https://heyzine.com/flip-book/34211829ae.html)
+  
 ### Need to remember:
 
 - **Cisco Packet Tracer version:** `8.2.2.0400`
