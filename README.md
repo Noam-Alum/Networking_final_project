@@ -19,6 +19,14 @@
 
 ## Packet Tracer
 
+> [!WARNING]
+> While using SVI in the routers that used **HWIC-4ESW** is the only option (other than using other routers) it does cause *native VLAN mismatch* issue.
+>
+> My take is that in this specific case, where the connection is **only between two routers** and involves **untagged traffic** on a **P2P link**, the **native VLAN mismatch** is not problematic.
+> The routers will still communicate correctly as long as the IP addressing and routing are set up properly, there is no risk of traffic being improperly tagged or misrouted, and no broadcast or other VLAN-related issues will arise.
+>
+> - **HWIC-4ESW** has only **L2** interfaces.
+
 | Date   | What has changed?                                                                                                   |
 | ------ | ------------------------------------------------------------------------------------------------------------------- |
 | Oct 14 | Three simple *ROS* buildings in Europe. (I'm done with Europe)                                                      |
