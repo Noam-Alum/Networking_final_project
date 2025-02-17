@@ -164,21 +164,15 @@
 
 - [ ] OSPF
   
-  - [ ] Shot brief about OSPF
+  - [X] Shot brief about OSPF
   
-  - [ ] Explane about the metric
-    
-    - [ ] SPF
-    
-    - [ ] Router ID
-    
-    - [ ] Calculations?
+  - [x] Explane about the metric
   
-  - [ ] From TWO WAT to FULL
+  - [x] From TWO WAY to FULL
   
-  - [ ] What is an AREA
+  - [X] What is an AREA
   
-  - [ ] Types of LSA messages
+  - [X] Types of LSA messages
   
   - [ ] Show the OSPF topology
   
