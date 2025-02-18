@@ -5,7 +5,7 @@
 ### Flip books
 
 - [Book preview](https://heyzine.com/flip-book/34211829ae.html)
-  
+
 ### Need to remember:
 
 - **Cisco Packet Tracer version:** `8.2.2.0400`
@@ -18,6 +18,14 @@
 # Change log
 
 ## Packet Tracer
+
+> [!WARNING]
+> While using SVI in the routers that used **HWIC-4ESW** is the only option (other than using other routers) it does cause *native VLAN mismatch* issue.
+> 
+> My take is that in this specific case, where the connection is **only between two routers** and involves **untagged traffic** on a **P2P link**, the **native VLAN mismatch** is not problematic.
+> The routers will still communicate correctly as long as the IP addressing and routing are set up properly, there is no risk of traffic being improperly tagged or misrouted, and no broadcast or other VLAN-related issues will arise.
+> 
+> - **HWIC-4ESW** has only **L2** interfaces.
 
 | Date   | What has changed?                                                                                                   |
 | ------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -152,15 +160,78 @@
     
     > Explanation & POC
 
-### To be added - WAN
+### WAN
 
-- [ ] Static Routing , Dynamic Routing
-- [ ] WIFI - Wireless Networks
-- [ ] WAN
-- [ ] VPN
-- [ ] IPSec
-- [ ] BGP
-- [ ] ACL
-- [ ] EIGRP
 - [ ] OSPF
-- [ ] NAT
+  
+  - [X] Shot brief about OSPF
+  
+  - [x] Explane about the metric
+  
+  - [x] From TWO WAY to FULL
+  
+  - [X] What is an AREA
+  
+  - [X] Types of LSA messages
+  
+  - [ ] Show the OSPF topology
+  
+  - [ ] DR and BDR for AREA 0
+  
+  - [ ] IP DIsterbution for OSPF routers
+  
+  - [ ] Network advertising
+  
+  - [ ] How to configure an AREA
+  
+  - [ ] How to configure NSSA
+  
+  - [ ] How to configure redisterbute
+  
+  - [ ] Show routing tables for each area
+
+- [ ] RIP - NSSA
+
+- [ ] EIGRP
+  
+  - [ ] Brief
+  
+  - [ ] Adjacency requiremnets
+  
+  - [ ] Type of messages
+  
+  - [ ] Mertric + Calculations
+  
+  - [ ] How to configure
+  
+  - [ ] Routing tables
+
+- [ ] Supernets
+  
+  - [ ] What is a supernet
+  
+  - [ ] How to calculate the supernet
+  
+  - [ ] How to configure
+  
+  - [ ] Show routes with supernet
+
+- [ ] BGP
+  
+  - [ ] BGP brief
+  
+  - [ ] From idle to Established
+  
+  - [ ] Adjacency requiermnets
+  
+  - [ ] Attributes
+  
+  - [ ] How to configure
+  
+  - [ ] Show routes
+
+- [ ] ACL
+
+- [ ] VPN - IPSec
+
+> NAT?
