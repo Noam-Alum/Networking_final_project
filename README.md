@@ -4,7 +4,7 @@
 
 ### Flip books
 
-- [Book preview](https://heyzine.com/flip-book/34211829ae.html)
+- [Book preview](https://heyzine.com/flip-book/00e5655788.html)
 
 ### Need to remember:
 
