@@ -1,0 +1,8 @@
+ORACLE_EU_PE3_EIGRP_ROUTER#show ip eigrp neighbors 
+IP-EIGRP neighbors for process 100
+H   Address         Interface      Hold Uptime    SRTT   RTO   Q   Seq
+                                   (sec)          (ms)        Cnt  Num
+0   192.168.18.1    Gig2/0         14   00:09:46  40     1000  0   475
+1   192.168.18.42   Gig1/0         14   00:09:01  40     1000  0   1443
+2   192.168.18.38   Gig3/0         13   00:09:01  40     1000  0   1134
+3   192.168.18.18   Gig0/0         13   00:08:54  40     1000  0   1898

@@ -1,0 +1,135 @@
+ORACLE_EU_PE3_EIGRP_ROUTER#show ip eigrp topology 
+IP-EIGRP Topology Table for AS 100/ID(192.168.18.41)
+
+Codes: P - Passive, A - Active, U - Update, Q - Query, R - Reply,
+       r - Reply status
+
+P 10.18.0.0/28, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.0/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.4/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.8/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.12/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.16/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.20/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.24/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.28/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.32/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.36/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.40/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.44/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.48/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.52/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.56/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.60/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.64/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.68/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.72/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.76/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.33.80/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.0/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.4/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.8/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.12/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.16/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.20/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.24/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.28/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.32/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.36/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.40/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.44/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.48/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.52/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.56/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.60/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.64/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.68/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.72/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.76/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.80/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.110.84/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.0/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.4/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.8/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.12/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.16/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.20/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.24/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.28/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.32/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.36/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.40/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.44/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.48/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 10.18.222.52/30, 1 successors, FD is 28672
+         via Rstatic (28672/28416)
+P 172.18.0.0/23, 1 successors, FD is 30720
+         via 192.168.18.42 (30720/28160), GigabitEthernet1/0
+P 172.18.2.0/23, 1 successors, FD is 30720
+         via 192.168.18.42 (30720/28160), GigabitEthernet1/0
+P 172.18.4.0/23, 1 successors, FD is 30720
+         via 192.168.18.42 (30720/28160), GigabitEthernet1/0
+P 172.18.6.0/23, 1 successors, FD is 30720
+         via 192.168.18.42 (30720/28160), GigabitEthernet1/0
+P 172.18.16.0/23, 1 successors, FD is 30720
+         via 192.168.18.38 (30720/28160), GigabitEthernet3/0
+P 172.18.18.0/23, 1 successors, FD is 30720
+         via 192.168.18.38 (30720/28160), GigabitEthernet3/0
+...

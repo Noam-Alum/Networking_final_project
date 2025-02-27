@@ -1,0 +1,17 @@
+ORACLE_EU_PE1_EIGRP_ROUTER(config)#interface GigabitEthernet0/0
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)# ip address 192.168.18.34 255.255.255.252
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)#interface GigabitEthernet1/0
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)# ip address 192.168.18.49 255.255.255.252
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)#interface GigabitEthernet2/0
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)# ip address 192.168.18.5 255.255.255.252
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)#interface GigabitEthernet3/0
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)# ip address 192.168.18.25 255.255.255.252
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)#interface GigabitEthernet9/0
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)# ip address 192.168.18.53 255.255.255.252
+ORACLE_EU_PE1_EIGRP_ROUTER(config-if)#router eigrp 100
+ORACLE_EU_PE1_EIGRP_ROUTER(config-router)# network 192.168.18.32 0.0.0.3
+ORACLE_EU_PE1_EIGRP_ROUTER(config-router)# network 192.168.18.48 0.0.0.3
+ORACLE_EU_PE1_EIGRP_ROUTER(config-router)# network 192.168.18.24 0.0.0.3
+ORACLE_EU_PE1_EIGRP_ROUTER(config-router)# network 192.168.18.4 0.0.0.3
+ORACLE_EU_PE1_EIGRP_ROUTER(config-router)# network 192.168.18.52 0.0.0.3
+ORACLE_EU_PE1_EIGRP_ROUTER(config-router)# no auto-summary
