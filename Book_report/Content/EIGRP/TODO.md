@@ -1,23 +1,23 @@
 # EIGRP TODO
 
-- Intro
+- [x] Intro
 
-- Tables
+- [x] Tables
 
-- K values
+- [x] K values
 
-- FD & RD
+- [x] FD & RD
 
-- Mertic
+- [x] Mertic
   
   - Calcualtions for FD and RD
 
-- EIGRP Topology
+- [x] EIGRP Topology
 
-- Configuration
+- [x] Configuration
 
-- Show tables in PT
+- [x] Show tables in PT
 
+- [ ] Replace logical view image
 
-
-
+- [ ] Add messagessss
