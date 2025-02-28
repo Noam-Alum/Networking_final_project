@@ -1,0 +1,29 @@
+ORACLE_EU_IT_Milan_F0_ROUTER(config)#interface FastEthernet0/0/0
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport access vlan 1011
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface FastEthernet0/0/1
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport access vlan 1012
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface FastEthernet0/0/2
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport access vlan 1013
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface FastEthernet0/0/3
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport access vlan 1014
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface Vlan1011
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#ip address 192.168.18.14 255.255.255.252
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface Vlan1012
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#ip address 192.168.18.30 255.255.255.252
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface Vlan1013
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#ip address 192.168.18.33 255.255.255.252
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#interface Vlan1014
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#ip address 192.168.18.38 255.255.255.252
+ORACLE_EU_IT_Milan_F0_ROUTER(config-if)#router eigrp 100
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 192.168.18.32 0.0.0.3
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 192.168.18.28 0.0.0.3
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 192.168.18.36 0.0.0.3
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 192.168.18.12 0.0.0.3
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 172.18.16.0 0.0.1.255
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 172.18.18.0 0.0.1.255
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 172.18.20.0 0.0.1.255
+ORACLE_EU_IT_Milan_F0_ROUTER(config-router)#network 172.18.22.0 0.0.1.255

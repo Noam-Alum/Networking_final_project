@@ -1,0 +1,16 @@
+ORACLE_EU_ES_Madrid_F0_ROUTER(config)#interface Vlan1011
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1012
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1013
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1014
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1015
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+ORACLE_EU_ES_Madrid_F0_ROUTER(config)#router eigrp 100
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 172.18.0.0 0.0.15.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#no network 172.18.16.0 0.0.1.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#no network 172.18.18.0 0.0.1.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#no network 172.18.20.0 0.0.1.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#no network 172.18.22.0 0.0.1.255

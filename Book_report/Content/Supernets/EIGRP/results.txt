@@ -1,0 +1,22 @@
+ORACLE_EU_PE2_EIGRP_ROUTER#sh ip route eigrp
+...
+D EX    10.18.222.24/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+D EX    10.18.222.28/30 [170/28672] via 192.168.18.5, 00:00:04, GigabitEthernet1/0
+D EX    10.18.222.32/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+D EX    10.18.222.36/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+D EX    10.18.222.40/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+D EX    10.18.222.44/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+D EX    10.18.222.48/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+D EX    10.18.222.52/30 [170/28672] via 192.168.18.5, 00:00:05, GigabitEthernet1/0
+     172.18.0.0/16 is variably subnetted, 25 subnets, 2 masks
+D       172.18.0.0/20 [90/30720] via 192.168.18.46, 00:11:07, GigabitEthernet0/0
+D       172.18.38.0/23 [90/128039424] via 192.168.18.2, 00:09:57, GigabitEthernet2/0
+                       [90/128039424] via 192.168.18.5, 00:09:57, GigabitEthernet1/0
+D EX    172.18.64.0/23 [170/28672] via 192.168.18.5, 00:00:02, GigabitEthernet1/0
+D EX    172.18.66.0/23 [170/28672] via 192.168.18.5, 00:00:02, GigabitEthernet1/0
+D EX    172.18.68.0/23 [170/28672] via 192.168.18.5, 00:00:02, GigabitEthernet1/0
+D EX    172.18.70.0/23 [170/28672] via 192.168.18.5, 00:00:02, GigabitEthernet1/0
+D EX    172.18.80.0/23 [170/28672] via 192.168.18.5, 00:00:04, GigabitEthernet1/0
+D EX    172.18.82.0/23 [170/28672] via 192.168.18.5, 00:00:04, GigabitEthernet1/0
+D EX    172.18.84.0/23 [170/28672] via 192.168.18.5, 00:00:04, GigabitEthernet1/0
+...

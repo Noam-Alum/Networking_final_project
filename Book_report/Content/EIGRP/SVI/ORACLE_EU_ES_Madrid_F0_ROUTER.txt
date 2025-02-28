@@ -1,0 +1,29 @@
+ORACLE_EU_ES_Madrid_F0_ROUTER(config)#interface FastEthernet0/0/0
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport access vlan 1011
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface FastEthernet0/0/1
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport access vlan 1012
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface FastEthernet0/0/2
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport access vlan 1013
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface FastEthernet0/0/3
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport access vlan 1014
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#switchport mode access
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1011
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip address 192.168.18.9 255.255.255.252
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1012
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip address 192.168.18.18 255.255.255.252
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1013
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip address 192.168.18.22 255.255.255.252
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#interface Vlan1014
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#ip address 192.168.18.26 255.255.255.252
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-if)#router eigrp 100
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 192.168.18.8 0.0.0.3
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 192.168.18.24 0.0.0.3
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 192.168.18.20 0.0.0.3
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 192.168.18.16 0.0.0.3
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 172.18.32.0 0.0.1.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 172.18.34.0 0.0.1.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 172.18.36.0 0.0.1.255
+ORACLE_EU_ES_Madrid_F0_ROUTER(config-router)#network 172.18.38.0 0.0.1.255
