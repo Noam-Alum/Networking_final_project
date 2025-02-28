@@ -18,6 +18,6 @@
 
 - [x] Show tables in PT
 
-- [ ] Replace logical view image
+- [x] Replace logical view image
 
-- [ ] Add messagessss
+- [x] Add messagessss
