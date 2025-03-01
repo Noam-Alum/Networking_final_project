@@ -174,47 +174,47 @@
   
   - [X] Types of LSA messages
   
-  - [ ] Show the OSPF topology
+  - [X] Show the OSPF topology
   
-  - [ ] DR and BDR for AREA 0
+  - [X] DR and BDR for AREA 0
   
-  - [ ] IP DIsterbution for OSPF routers
+  - [X] IP DIsterbution for OSPF routers
   
-  - [ ] Network advertising
+  - [X] Network advertising
   
-  - [ ] How to configure an AREA
+  - [X] How to configure an AREA
   
-  - [ ] How to configure NSSA
+  - [X] How to configure NSSA
   
-  - [ ] How to configure redisterbute
+  - [X] How to configure redisterbute
   
-  - [ ] Show routing tables for each area
+  - [X] Show routing tables for each area
 
-- [ ] RIP - NSSA
+- [X] RIP - NSSA
 
-- [ ] EIGRP
+- [X] EIGRP
   
-  - [ ] Brief
+  - [X] Brief
   
-  - [ ] Adjacency requiremnets
+  - [X] Adjacency requiremnets
   
-  - [ ] Type of messages
+  - [X] Type of messages
   
-  - [ ] Mertric + Calculations
+  - [X] Mertric + Calculations
   
-  - [ ] How to configure
+  - [X] How to configure
   
-  - [ ] Routing tables
+  - [X] Routing tables
 
-- [ ] Supernets
+- [X] Supernets
   
-  - [ ] What is a supernet
+  - [X] What is a supernet
   
-  - [ ] How to calculate the supernet
+  - [X] How to calculate the supernet
   
-  - [ ] How to configure
+  - [X] How to configure
   
-  - [ ] Show routes with supernet
+  - [X] Show routes with supernet
 
 - [ ] BGP
   
@@ -233,5 +233,7 @@
 - [ ] ACL
 
 - [ ] VPN - IPSec
+
+- [ ] ASA
 
 > NAT?
