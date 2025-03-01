@@ -1,0 +1,9 @@
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#interface GigabitEthernet0/0/0
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-if)#ip address 10.18.110.70 255.255.255.252
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-if)#router ospf 110
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-router)#log-adjacency-changes
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-router)#network 10.18.110.68 0.0.0.3 area 110
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-router)#network 172.18.130.0 0.0.1.255 area 110
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-router)#network 172.18.132.0 0.0.1.255 area 110
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-router)#network 172.18.134.0 0.0.1.255 area 110
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-router)#network 172.18.128.0 0.0.1.255 area 110

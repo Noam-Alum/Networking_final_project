@@ -1,0 +1,9 @@
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config)#interface GigabitEthernet8/0
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-if)#ip address 10.18.110.82 255.255.255.252
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-if)#router ospf 110
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-router)#log-adjacency-changes
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-router)#network 10.18.110.80 0.0.0.3 area 110
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-router)#network 172.18.162.0 0.0.1.255 area 110
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-router)#network 172.18.164.0 0.0.1.255 area 110
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-router)#network 172.18.166.0 0.0.1.255 area 110
+ORACLE_US_CA_San_Jose_F0_ROUTER1(config-router)#network 172.18.160.0 0.0.1.255 area 110

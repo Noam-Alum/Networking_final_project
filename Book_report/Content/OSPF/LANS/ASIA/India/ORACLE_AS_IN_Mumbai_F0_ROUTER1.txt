@@ -1,0 +1,10 @@
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config)#interface GigabitEthernet8/0
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-if)# ip address 10.18.222.45 255.255.255.252
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-if)#router ospf 222
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# log-adjacency-changes
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# network 10.18.222.44 0.0.0.3 area 222
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# network 172.18.80.0 0.0.1.255 area 222
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# network 172.18.82.0 0.0.1.255 area 222
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# network 172.18.84.0 0.0.1.255 area 222
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# network 172.18.86.0 0.0.1.255 area 222
+ORACLE_AS_IN_Mumbai_F0_ROUTER1(config-router)# network 172.18.88.0 0.0.1.255 area 222

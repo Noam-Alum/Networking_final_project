@@ -1,0 +1,12 @@
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config)#interface GigabitEthernet8/0
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-if)#ip address 10.18.110.74 255.255.255.252
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-if)#router ospf 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#log-adjacency-changes
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 10.18.110.72 0.0.0.3 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.144.0 0.0.1.255 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.146.0 0.0.1.255 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.148.0 0.0.1.255 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.150.0 0.0.1.255 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.152.0 0.0.1.255 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.154.0 0.0.1.255 area 110
+ORACLE_US_AZ_Phoenix_F0_ROUTER1(config-router)#network 172.18.156.0 0.0.1.255 area 110

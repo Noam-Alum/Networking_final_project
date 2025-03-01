@@ -1,0 +1,9 @@
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#interface GigabitEthernet0/0/0
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-if)#ip address 10.18.222.41 255.255.255.252
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-if)#router ospf 222
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-router)#log-adjacency-changes
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-router)#network 10.18.222.40 0.0.0.3 area 222
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-router)#network 172.18.98.0 0.0.1.255 area 222
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-router)#network 172.18.100.0 0.0.1.255 area 222
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-router)#network 172.18.102.0 0.0.1.255 area 222
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-router)#network 172.18.96.0 0.0.1.255 area 222
