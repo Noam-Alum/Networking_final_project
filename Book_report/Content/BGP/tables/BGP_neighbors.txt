@@ -1,0 +1,11 @@
+ORACLE_BGP_AS_534_ROUTER_1#show ip bgp neighbors 
+BGP neighbor is 12.18.53.2,  remote AS 34, external link
+  BGP version 4, remote router ID 12.18.53.2
+  BGP state = Established, up for 00:26:58
+  Last read 00:26:58, last write 00:26:58, hold time is 180, keepalive interval is 60 seconds
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Address family IPv4 Unicast: advertised and received
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0

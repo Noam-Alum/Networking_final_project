@@ -1,0 +1,5 @@
+ORACLE_BGP_AS_622_ROUTER_1(config-router)#router bgp 622
+ORACLE_BGP_AS_622_ROUTER_1(config-router)#neighbor 12.18.62.2 remote-as 1294
+ORACLE_BGP_AS_622_ROUTER_1(config-router)#neighbor 12.18.34.1 remote-as 34
+ORACLE_BGP_AS_622_ROUTER_1(config-router)#network 12.18.62.0 mask 255.255.255.252
+ORACLE_BGP_AS_622_ROUTER_1(config-router)#network 12.18.34.0 mask 255.255.255.252

@@ -1,0 +1,3 @@
+ORACLE_RIP_ROUTER_2_ASBR_OSPF_AREA_33(config)#ip route 0.0.0.0 0.0.0.0 Null0
+ORACLE_RIP_ROUTER_2_ASBR_OSPF_AREA_33(config)#router rip
+ORACLE_RIP_ROUTER_2_ASBR_OSPF_AR(config-router)#default-information originate

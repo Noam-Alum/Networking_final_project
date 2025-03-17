@@ -1,0 +1,4 @@
+ORACLE_OSPF_AREA_33_ABR_TO_AREA_0_1(config)#ip route 0.0.0.0 0.0.0.0 GigabitEthernet5/0
+ORACLE_OSPF_AREA_33_ABR_TO_AREA_0_1(config)#router ospf 33
+ORACLE_OSPF_AREA_33_ABR_TO_AREA_(config-router)#default-information originate
+ORACLE_OSPF_AREA_33_ABR_TO_AREA_(config-router)#redistribute static subnets
