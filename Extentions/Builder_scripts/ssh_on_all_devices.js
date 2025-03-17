@@ -235,8 +235,7 @@ let devices = [
     "ORACLE_BGP_AS_34_ROUTER_1",
     "ORACLE_BGP_AS_622_ROUTER_1",
     "ORACLE_BGP_AS_1294_ROUTER_1",
-    "ORACLE_BGP_AS_786_ROUTER_1",
-    "ORACLE_BGP_AS_786_SWITCH_1"
+    "ORACLE_BGP_AS_786_ROUTER_1"
 ];
 
 for (let i = 0; i < devices.length; i++) {
