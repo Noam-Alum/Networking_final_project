@@ -4,7 +4,7 @@
 
 ### Flip books
 
-- [Book preview](https://heyzine.com/flip-book/00e5655788.html)
+- [Book preview](https://heyzine.com/flip-book/c858ce3875.html)
 
 ### Need to remember:
 
@@ -164,57 +164,57 @@
 
 - [ ] OSPF
   
-  - [X] Shot brief about OSPF
+  - [x] Shot brief about OSPF
   
   - [x] Explane about the metric
   
   - [x] From TWO WAY to FULL
   
-  - [X] What is an AREA
+  - [x] What is an AREA
   
-  - [X] Types of LSA messages
+  - [x] Types of LSA messages
   
-  - [X] Show the OSPF topology
+  - [x] Show the OSPF topology
   
-  - [X] DR and BDR for AREA 0
+  - [x] DR and BDR for AREA 0
   
-  - [X] IP DIsterbution for OSPF routers
+  - [x] IP DIsterbution for OSPF routers
   
-  - [X] Network advertising
+  - [x] Network advertising
   
-  - [X] How to configure an AREA
+  - [x] How to configure an AREA
   
-  - [X] How to configure NSSA
+  - [x] How to configure NSSA
   
-  - [X] How to configure redisterbute
+  - [x] How to configure redisterbute
   
-  - [X] Show routing tables for each area
+  - [x] Show routing tables for each area
 
-- [X] RIP - NSSA
+- [x] RIP - NSSA
 
-- [X] EIGRP
+- [x] EIGRP
   
-  - [X] Brief
+  - [x] Brief
   
-  - [X] Adjacency requiremnets
+  - [x] Adjacency requiremnets
   
-  - [X] Type of messages
+  - [x] Type of messages
   
-  - [X] Mertric + Calculations
+  - [x] Mertric + Calculations
   
-  - [X] How to configure
+  - [x] How to configure
   
-  - [X] Routing tables
+  - [x] Routing tables
 
-- [X] Supernets
+- [x] Supernets
   
-  - [X] What is a supernet
+  - [x] What is a supernet
   
-  - [X] How to calculate the supernet
+  - [x] How to calculate the supernet
   
-  - [X] How to configure
+  - [x] How to configure
   
-  - [X] Show routes with supernet
+  - [x] Show routes with supernet
 
 - [ ] BGP
   
