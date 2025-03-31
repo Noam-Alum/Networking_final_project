@@ -1,0 +1,91 @@
+! IP 10.18.110.70
+! First section
+
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#license boot module c1900 technology-package securityk9
+PLEASE  READ THE  FOLLOWING TERMS  CAREFULLY. INSTALLING THE LICENSE OR
+LICENSE  KEY  PROVIDED FOR  ANY CISCO  PRODUCT  FEATURE  OR  USING SUCH
+PRODUCT  FEATURE  CONSTITUTES  YOUR  FULL ACCEPTANCE  OF  THE FOLLOWING
+TERMS. YOU MUST NOT PROCEED FURTHER IF YOU ARE NOT WILLING TO  BE BOUND
+BY ALL THE TERMS SET FORTH HEREIN.                                     
+                                                                       
+Use of this product feature requires  an additional license from Cisco,
+together with an additional  payment.  You may use this product feature
+on an evaluation basis, without payment to Cisco, for 60 days. Your use
+of the  product,  including  during the 60 day  evaluation  period,  is
+subject to the Cisco end user license agreement                        
+http://www.cisco.com/en/US/docs/general/warranty/English/EU1KEN_.html  
+If you use the product feature beyond the 60 day evaluation period, you
+must submit the appropriate payment to Cisco for the license. After the
+60 day  evaluation  period,  your  use of the  product  feature will be
+governed  solely by the Cisco  end user license agreement (link above),
+together  with any supplements  relating to such product  feature.  The
+above  applies  even if the evaluation  license  is  not  automatically
+terminated  and you do  not receive any notice of the expiration of the
+evaluation  period.  It is your  responsibility  to  determine when the
+evaluation  period is complete and you are required to make  payment to
+Cisco for your use of the product feature beyond the evaluation period.
+                                                                       
+Your  acceptance  of  this agreement  for the software  features on one
+product  shall be deemed  your  acceptance  with  respect  to all  such
+software  on all Cisco  products  you purchase  which includes the same
+software.  (The foregoing  notwithstanding, you must purchase a license
+for each software  feature you use past the 60 days evaluation  period,
+so  that  if you enable a software  feature on  1000  devices, you must
+purchase 1000 licenses for use past  the 60 day evaluation period.)    
+                                                                       
+Activation  of the  software command line interface will be evidence of
+your acceptance of this agreement.                                     
+                                                                       
+                                                                       
+ACCEPT? [yes/no]: yes
+
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#do write memory
+Building configuration...
+[OK]
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#do reload
+
+!
+!
+!
+
+! First part proof
+ORACLE_US_VA_Ashburn_F0_ROUTER#show version
+...
+...
+Technology Package License Information for Module:'c1900'
+
+----------------------------------------------------------------
+Technology    Technology-package          Technology-package
+              Current       Type          Next reboot
+-----------------------------------------------------------------
+ipbase        ipbasek9      Permanent     ipbasek9
+security      securityk9    Evaluation    securityk9
+data          disable       None          None
+
+! Second section
+
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#crypto isakmp policy 10
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-isakmp)#authentication pre-share
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-isakmp)#encryption 3des
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-isakmp)#hash sha
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-isakmp)#group 1
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-isakmp)#lifetime 86400
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-isakmp)#crypto isakmp key ORACLE address 10.18.222.41
+
+! Third section
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#crypto ipsec transform-set mic esp-3des esp-sha-hmac
+
+! Fourth section
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#access-list 100 permit ip 10.18.222.41 0.0.0.3 10.18.110.70 0.0.0.3
+
+! Fifth
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#crypto map mic-map 10 ipsec-isakmp
+ORACLE_US_VA_Ashburn_F0_ROUT(config-crypto-map)#set peer 10.18.222.41
+ORACLE_US_VA_Ashburn_F0_ROUT(config-crypto-map)#set transform-set mic
+ORACLE_US_VA_Ashburn_F0_ROUT(config-crypto-map)#match address 100
+
+! Sixth
+ORACLE_US_VA_Ashburn_F0_ROUTER(config)#interface gigabitEthernet 0/0/0
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-if)#crypto map mic-map
+*Jan  3 07:16:26.785: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is ON
+ORACLE_US_VA_Ashburn_F0_ROUTER(config-if)#

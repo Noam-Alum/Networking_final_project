@@ -1,0 +1,35 @@
+! IP: 10.18.222.41
+! First section
+
+WRITE THAT ITS LIKE IN US VA Ash
+
+!
+!
+!
+
+! Second section
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#crypto isakmp policy 10
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#authentication pre-share
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#encryption 3des
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#hash sha
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#group 1
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#lifetime 86400
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#crypto isakmp key ORACLE address 10.18.110.70
+
+! Third section
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#crypto ipsec transform-set mic esp-3des esp-sha-hmac
+
+! Fourth section
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 10.18.110.70 0.0.0.3 10.18.222.41 0.0.0.3
+
+! Fifth
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#crypto map mic-map 10 ipsec-isakmp
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-crypto-map)#set peer 10.18.110.70
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-crypto-map)#set transform-set mic
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-crypto-map)#match address 100
+
+! Sixth
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#interface gigabitEthernet 0/0/0
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-if)#crypto map mic-map
+*Jan  3 07:16:26.785: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is ON
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config-if)#
