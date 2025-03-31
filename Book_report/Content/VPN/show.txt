@@ -1,0 +1,35 @@
+ORACLE_AS_JP_Tokyo_F0_ROUTER#show crypto ipsec sa
+
+interface: GigabitEthernet0/0/0
+    Crypto map tag: mic-map, local addr 10.18.222.41
+
+   protected vrf: (none)
+   local  ident (addr/mask/prot/port): (10.18.110.68/255.255.255.252/0/0)
+   remote  ident (addr/mask/prot/port): (10.18.222.40/255.255.255.252/0/0)
+   current_peer 10.18.110.70 port 500
+    PERMIT, flags={origin_is_acl,}
+   #pkts encaps: 0, #pkts encrypt: 0, #pkts digest: 0
+   #pkts decaps: 0, #pkts decrypt: 0, #pkts verify: 0
+   #pkts compressed: 0, #pkts decompressed: 0
+   #pkts not compressed: 0, #pkts compr. failed: 0
+   #pkts not decompressed: 0, #pkts decompress failed: 0
+   #send errors 0, #recv errors 0
+
+     local crypto endpt.: 10.18.222.41, remote crypto endpt.:10.18.110.70
+     path mtu 1500, ip mtu 1500, ip mtu idb GigabitEthernet0/0/0
+     current outbound spi: 0x0(0)
+
+
+ORACLE_AS_JP_Tokyo_F0_ROUTER#show crypto map
+Crypto Map mic-map 10 ipsec-isakmp
+        Peer = 10.18.110.70
+        Extended IP access list 100
+            access-list 100 permit ip 10.18.110.68 0.0.0.3 10.18.222.40 0.0.0.3
+        Current peer: 10.18.110.70
+        Security association lifetime: 4608000 kilobytes/3600 seconds
+        PFS (Y/N): N
+        Transform sets={
+                mic,
+        }
+        Interfaces using crypto map mic-map:
+                GigabitEthernet0/0/0
