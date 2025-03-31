@@ -240,8 +240,6 @@ let devices = [
 
 for (let i = 0; i < devices.length; i++) {
     setTimeout(() => {
-        configureIosDevice(devices[i], "1234");
-        configureIosDevice(devices[i], "conf t");
         configureIosDevice(devices[i], "do wr");
     }, i * 1000);
 }
