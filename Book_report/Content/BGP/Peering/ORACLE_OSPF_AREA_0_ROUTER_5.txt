@@ -1,4 +1,2 @@
 ORACLE_OSPF_AREA_0_ROUTER_5(config)#router ospf 1
 ORACLE_OSPF_AREA_0_ROUTER_5(config-router)#network 12.18.53.8 0.0.0.3 area 0
-ORACLE_OSPF_AREA_0_ROUTER_5(config-router)#default-information originate
-ORACLE_OSPF_AREA_0_ROUTER_5(config)#ip route 0.0.0.0 0.0.0.0 GigabitEthernet1/0
