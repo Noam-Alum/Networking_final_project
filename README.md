@@ -4,7 +4,7 @@
 
 ### Flip books
 
-- [Book preview](https://heyzine.com/flip-book/c858ce3875.html)
+- [Book preview](https://heyzine.com/flip-book/fbb6555c9d.html)
 
 ### Need to remember:
 
@@ -208,19 +208,19 @@
   
   - [x] Show routes with supernet
 
-- [X] BGP
+- [x] BGP
   
-  - [X] BGP brief
+  - [x] BGP brief
   
-  - [X] From idle to Established
+  - [x] From idle to Established
   
-  - [X] Adjacency requiermnets
+  - [x] Adjacency requiermnets
   
-  - [X] Attributes
+  - [x] Attributes
   
-  - [X] How to configure
+  - [x] How to configure
   
-  - [X] Show routes
+  - [x] Show routes
 
 - [ ] ACL
 
