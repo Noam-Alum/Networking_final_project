@@ -4,8 +4,8 @@ interface: GigabitEthernet0/0/0
     Crypto map tag: mic-map, local addr 10.18.222.41
 
    protected vrf: (none)
-   local  ident (addr/mask/prot/port): (10.18.110.68/255.255.255.252/0/0)
-   remote  ident (addr/mask/prot/port): (10.18.222.40/255.255.255.252/0/0)
+   local  ident (addr/mask/prot/port): (172.18.98.0/255.255.254.0/0/0)
+   remote  ident (addr/mask/prot/port): (172.18.130.0/255.255.254.0/0/0)
    current_peer 10.18.110.70 port 500
     PERMIT, flags={origin_is_acl,}
    #pkts encaps: 0, #pkts encrypt: 0, #pkts digest: 0
@@ -19,12 +19,21 @@ interface: GigabitEthernet0/0/0
      path mtu 1500, ip mtu 1500, ip mtu idb GigabitEthernet0/0/0
      current outbound spi: 0x0(0)
 
+     inbound esp sas:
 
 ORACLE_AS_JP_Tokyo_F0_ROUTER#show crypto map
 Crypto Map mic-map 10 ipsec-isakmp
         Peer = 10.18.110.70
         Extended IP access list 100
-            access-list 100 permit ip 10.18.110.68 0.0.0.3 10.18.222.40 0.0.0.3
+            access-list 100 permit ip 172.18.98.0 0.0.1.255 172.18.130.0 0.0.1.255
+            access-list 100 permit ip 172.18.98.0 0.0.1.255 172.18.132.0 0.0.1.255
+            access-list 100 permit ip 172.18.98.0 0.0.1.255 172.18.134.0 0.0.1.255
+            access-list 100 permit ip 172.18.100.0 0.0.1.255 172.18.130.0 0.0.1.255
+            access-list 100 permit ip 172.18.100.0 0.0.1.255 172.18.132.0 0.0.1.255
+            access-list 100 permit ip 172.18.100.0 0.0.1.255 172.18.134.0 0.0.1.255
+            access-list 100 permit ip 172.18.102.0 0.0.1.255 172.18.130.0 0.0.1.255
+            access-list 100 permit ip 172.18.102.0 0.0.1.255 172.18.132.0 0.0.1.255
+            access-list 100 permit ip 172.18.102.0 0.0.1.255 172.18.134.0 0.0.1.255
         Current peer: 10.18.110.70
         Security association lifetime: 4608000 kilobytes/3600 seconds
         PFS (Y/N): N

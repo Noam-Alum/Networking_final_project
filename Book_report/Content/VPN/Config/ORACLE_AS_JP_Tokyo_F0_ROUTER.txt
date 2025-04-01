@@ -20,7 +20,16 @@ ORACLE_AS_JP_Tokyo_F0_ROUTER(config-isakmp)#crypto isakmp key ORACLE address 10.
 ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#crypto ipsec transform-set mic esp-3des esp-sha-hmac
 
 ! Fourth section
-ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 10.18.110.70 0.0.0.3 10.18.222.41 0.0.0.3
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.98.0 0.0.1.255 172.18.130.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.98.0 0.0.1.255 172.18.132.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.98.0 0.0.1.255 172.18.134.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.100.0 0.0.1.255 172.18.130.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.100.0 0.0.1.255 172.18.132.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.100.0 0.0.1.255 172.18.134.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.102.0 0.0.1.255 172.18.130.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.102.0 0.0.1.255 172.18.132.0 0.0.1.255
+ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#access-list 100 permit ip 172.18.102.0 0.0.1.255 172.18.134.0 0.0.1.255
+
 
 ! Fifth
 ORACLE_AS_JP_Tokyo_F0_ROUTER(config)#crypto map mic-map 10 ipsec-isakmp
