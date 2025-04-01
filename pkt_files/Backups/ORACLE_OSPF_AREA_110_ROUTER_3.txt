@@ -1,0 +1,105 @@
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_OSPF_AREA_110_ROUTER_3
+!
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.18.110.10 255.255.255.252
+!
+interface GigabitEthernet1/0
+ ip address 10.18.110.34 255.255.255.252
+!
+interface GigabitEthernet2/0
+ ip address 10.18.110.37 255.255.255.252
+!
+interface GigabitEthernet3/0
+ ip address 10.18.110.49 255.255.255.252
+!
+interface GigabitEthernet4/0
+ ip address 10.18.110.57 255.255.255.252
+!
+interface GigabitEthernet5/0
+ ip address 10.18.110.81 255.255.255.252
+!
+interface GigabitEthernet6/0
+ ip address 10.18.110.85 255.255.255.252
+!
+interface GigabitEthernet7/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet8/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet9/0
+ no ip address
+ shutdown
+!
+router ospf 110
+ log-adjacency-changes
+ network 10.18.110.32 0.0.0.3 area 110
+ network 10.18.110.8 0.0.0.3 area 110
+ network 10.18.110.36 0.0.0.3 area 110
+ network 10.18.110.48 0.0.0.3 area 110
+ network 10.18.110.56 0.0.0.3 area 110
+ network 10.18.110.80 0.0.0.3 area 110
+ network 10.18.110.84 0.0.0.3 area 110
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end

@@ -1,0 +1,136 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_AS_JP_Tokyo_F0_ROUTER
+!
+no logging on
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+ip dhcp pool Engineering_POOL
+ network 172.18.98.0 255.255.254.0
+ default-router 172.18.99.254
+ dns-server 12.18.53.10
+ip dhcp pool Accounting_POOL
+ network 172.18.100.0 255.255.254.0
+ default-router 172.18.101.254
+ dns-server 12.18.53.10
+ip dhcp pool General_Management_POOL
+ network 172.18.102.0 255.255.254.0
+ default-router 172.18.103.254
+ dns-server 12.18.53.10
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+license udi pid CISCO1941/K9 sn FTX1524DW65-
+license boot module c1900 technology-package securityk9
+!
+!
+!
+crypto isakmp policy 10
+ encr 3des
+ authentication pre-share
+!
+crypto isakmp key ORACLE address 10.18.110.70
+!
+!
+!
+crypto ipsec transform-set mic esp-3des esp-sha-hmac
+!
+crypto map mic-map 10 ipsec-isakmp 
+ set peer 10.18.110.70
+ set transform-set mic 
+ match address 100
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 172.18.99.254 255.255.254.0
+!
+interface GigabitEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 172.18.101.254 255.255.254.0
+!
+interface GigabitEthernet0/0.40
+ encapsulation dot1Q 40
+ ip address 172.18.103.254 255.255.254.0
+!
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 101
+ ip address 172.18.97.254 255.255.254.0
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/0
+ ip address 10.18.222.41 255.255.255.252
+ crypto map mic-map
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 222
+ log-adjacency-changes
+ network 10.18.222.40 0.0.0.3 area 222
+ network 172.18.98.0 0.0.1.255 area 222
+ network 172.18.100.0 0.0.1.255 area 222
+ network 172.18.102.0 0.0.1.255 area 222
+ network 172.18.96.0 0.0.1.255 area 222
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 100 permit ip 10.18.110.68 0.0.0.3 10.18.222.40 0.0.0.3
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end

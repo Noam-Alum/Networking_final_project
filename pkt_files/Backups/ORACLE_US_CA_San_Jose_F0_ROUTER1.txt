@@ -1,0 +1,107 @@
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_US_CA_San_Jose_F0_ROUTER1
+!
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet8/0
+ ip address 10.18.110.82 255.255.255.252
+!
+interface GigabitEthernet9/0
+ no ip address
+!
+interface GigabitEthernet9/0.20
+ encapsulation dot1Q 20
+ ip address 172.18.163.251 255.255.254.0
+ ip helper-address 172.18.160.2
+ standby 1 ip 172.18.163.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+interface GigabitEthernet9/0.30
+ encapsulation dot1Q 30
+ ip address 172.18.165.251 255.255.254.0
+ ip helper-address 172.18.160.2
+ standby 1 ip 172.18.165.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+interface GigabitEthernet9/0.40
+ encapsulation dot1Q 40
+ ip address 172.18.167.251 255.255.254.0
+ ip helper-address 172.18.160.2
+ standby 1 ip 172.18.167.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+interface GigabitEthernet9/0.110
+ encapsulation dot1Q 110
+ ip address 172.18.161.251 255.255.254.0
+ standby 1 ip 172.18.161.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+router ospf 110
+ log-adjacency-changes
+ network 10.18.110.80 0.0.0.3 area 110
+ network 172.18.162.0 0.0.1.255 area 110
+ network 172.18.164.0 0.0.1.255 area 110
+ network 172.18.166.0 0.0.1.255 area 110
+ network 172.18.160.0 0.0.1.255 area 110
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end

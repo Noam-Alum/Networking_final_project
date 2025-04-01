@@ -1,0 +1,87 @@
+!
+version 12.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_US_CA_San_Jose_F0_SW_Core1
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+ip domain-name oracle.com
+!
+username admin privilege 1 password 0 1234
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+spanning-tree vlan 30,40 priority 4096
+spanning-tree vlan 20,110 priority 8192
+!
+interface Port-channel1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+ channel-group 1 mode desirable
+!
+interface GigabitEthernet1/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+ channel-group 1 mode desirable
+!
+interface GigabitEthernet2/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+ channel-group 1 mode desirable
+!
+interface GigabitEthernet3/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+ channel-group 1 mode desirable
+!
+interface GigabitEthernet4/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+ channel-group 1 mode desirable
+!
+interface GigabitEthernet5/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+!
+interface GigabitEthernet6/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+!
+interface GigabitEthernet7/1
+ switchport trunk allowed vlan 20,30,40,110
+ switchport mode trunk
+!
+interface GigabitEthernet8/1
+!
+interface GigabitEthernet9/1
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+!
+!
+!
+line con 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login
+!
+!
+!
+!
+end

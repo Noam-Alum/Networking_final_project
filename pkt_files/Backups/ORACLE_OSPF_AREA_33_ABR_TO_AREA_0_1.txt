@@ -1,0 +1,104 @@
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_OSPF_AREA_33_ABR_TO_AREA_0_1
+!
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.18.33.22 255.255.255.252
+!
+interface GigabitEthernet1/0
+ ip address 10.18.33.6 255.255.255.252
+!
+interface GigabitEthernet2/0
+ ip address 10.18.33.38 255.255.255.252
+!
+interface GigabitEthernet3/0
+ ip address 10.18.33.42 255.255.255.252
+!
+interface GigabitEthernet4/0
+ ip address 10.18.33.57 255.255.255.252
+!
+interface GigabitEthernet5/0
+ ip address 10.18.33.61 255.255.255.252
+!
+interface GigabitEthernet6/0
+ no ip address
+!
+interface GigabitEthernet7/0
+ no ip address
+!
+interface GigabitEthernet8/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet9/0
+ no ip address
+ shutdown
+!
+router ospf 33
+ log-adjacency-changes
+ area 33 nssa
+ network 10.18.33.20 0.0.0.3 area 33
+ network 10.18.33.4 0.0.0.3 area 33
+ network 10.18.33.36 0.0.0.3 area 33
+ network 10.18.33.40 0.0.0.3 area 33
+ network 10.18.33.56 0.0.0.3 area 33
+ network 10.18.33.60 0.0.0.3 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end

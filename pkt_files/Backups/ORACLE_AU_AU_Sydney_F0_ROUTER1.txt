@@ -1,0 +1,109 @@
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_AU_AU_Sydney_F0_ROUTER1
+!
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet8/0
+ ip address 10.18.33.77 255.255.255.252
+!
+interface GigabitEthernet9/0
+ no ip address
+!
+interface GigabitEthernet9/0.20
+ encapsulation dot1Q 20
+ ip address 172.18.67.253 255.255.254.0
+ ip helper-address 172.18.64.2
+ standby 1 ip 172.18.67.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+interface GigabitEthernet9/0.30
+ encapsulation dot1Q 30
+ ip address 172.18.69.253 255.255.254.0
+ ip helper-address 172.18.64.2
+ standby 1 ip 172.18.69.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+interface GigabitEthernet9/0.40
+ encapsulation dot1Q 40
+ ip address 172.18.71.253 255.255.254.0
+ ip helper-address 172.18.64.2
+ standby 1 ip 172.18.71.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+interface GigabitEthernet9/0.101
+ encapsulation dot1Q 101
+ ip address 172.18.65.253 255.255.254.0
+ ip helper-address 172.18.64.2
+ standby 1 ip 172.18.65.254
+ standby 1 priority 110
+ standby 1 preempt
+!
+router ospf 33
+ log-adjacency-changes
+ area 33 nssa
+ network 10.18.33.76 0.0.0.3 area 33
+ network 172.18.64.0 0.0.1.255 area 33
+ network 172.18.66.0 0.0.1.255 area 33
+ network 172.18.68.0 0.0.1.255 area 33
+ network 172.18.70.0 0.0.1.255 area 33
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end

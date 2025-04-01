@@ -1,0 +1,165 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_EU_ES_Madrid_F0_ROUTER
+!
+no logging console
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+ip dhcp pool Legal_POOL
+ network 172.18.34.0 255.255.254.0
+ default-router 172.18.35.254
+ dns-server 12.18.53.10
+ip dhcp pool Marketing_POOL
+ network 172.18.36.0 255.255.254.0
+ default-router 172.18.37.254
+ dns-server 12.18.53.10
+ip dhcp pool Operations_POOL
+ network 172.18.38.0 255.255.254.0
+ default-router 172.18.39.254
+ dns-server 12.18.53.10
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+license udi pid CISCO1941/K9 sn FTX1524P3OT-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 172.18.35.254 255.255.254.0
+!
+interface GigabitEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 172.18.37.254 255.255.254.0
+!
+interface GigabitEthernet0/0.40
+ encapsulation dot1Q 40
+ ip address 172.18.39.254 255.255.254.0
+!
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 172.18.33.254 255.255.254.0
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet0/0/0
+ switchport access vlan 1011
+ switchport mode access
+!
+interface FastEthernet0/0/1
+ switchport access vlan 1012
+ switchport mode access
+!
+interface FastEthernet0/0/2
+ switchport access vlan 1013
+ switchport mode access
+!
+interface FastEthernet0/0/3
+ switchport access vlan 1014
+ switchport mode access
+!
+interface FastEthernet0/1/0
+ switchport mode access
+!
+interface FastEthernet0/1/1
+ switchport mode access
+!
+interface FastEthernet0/1/2
+ switchport mode access
+!
+interface FastEthernet0/1/3
+ switchport mode access
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan1011
+ mac-address 00d0.5888.2601
+ ip address 192.168.18.9 255.255.255.252
+ ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+!
+interface Vlan1012
+ mac-address 00d0.5888.2602
+ ip address 192.168.18.18 255.255.255.252
+ ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+!
+interface Vlan1013
+ mac-address 00d0.5888.2603
+ ip address 192.168.18.22 255.255.255.252
+ ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+!
+interface Vlan1014
+ mac-address 00d0.5888.2604
+ ip address 192.168.18.26 255.255.255.252
+ ip summary-address eigrp 100 172.18.0.0 255.255.240.0 5
+!
+router eigrp 100
+ network 192.168.18.8 0.0.0.3
+ network 192.168.18.24 0.0.0.3
+ network 192.168.18.20 0.0.0.3
+ network 192.168.18.16 0.0.0.3
+ network 172.18.0.0 0.0.15.255
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end

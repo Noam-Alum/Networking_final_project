@@ -1,0 +1,109 @@
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ORACLE_OSPF_AREA_0_ASBR_EIGRP_2
+!
+!
+!
+enable secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 0 1234
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name oracle.com
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 10.18.0.13 255.255.255.240
+!
+interface GigabitEthernet1/0
+ ip address 192.168.18.58 255.255.255.252
+!
+interface GigabitEthernet2/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet3/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet4/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet5/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet6/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet7/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet8/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet9/0
+ no ip address
+!
+router eigrp 100
+ redistribute ospf 1 metric 100000 10 255 1 1500 
+ network 192.168.18.56 0.0.0.3
+ no auto-summary
+!
+router ospf 1
+ log-adjacency-changes
+ redistribute eigrp 100 metric 100 metric-type 1 subnets 
+ network 10.18.0.0 0.0.0.15 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end
