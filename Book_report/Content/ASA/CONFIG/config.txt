@@ -1,0 +1,66 @@
+# ASA IP: 192.168.20.0/24
+# | HTTP: 192.168.30.200
+# | HTTP2: 192.168.30.201
+# | FTP: 192.168.30.202
+
+192.168.30.1
+12.18.53.10
+
+## Configure interfaces
+
+### Outside
+ORACLEASA(config)#interface GigabitEthernet1/1
+ORACLEASA(config-if)#nameif outside
+ORACLEASA(config-if)# security-level 0
+ORACLEASA(config-if)# ip address 17.17.17.1 255.255.255.252
+
+
+### Inside
+ORACLEASA(config)#interface GigabitEthernet1/2
+ORACLEASA(config-if)# nameif inside
+ORACLEASA(config-if)# security-level 100
+ORACLEASA(config-if)# ip address 192.168.20.1 255.255.255.0
+
+
+### DMZ
+ORACLEASA(config-if)#interface GigabitEthernet1/3
+ORACLEASA(config-if)# nameif dmz
+ORACLEASA(config-if)# security-level 50
+ORACLEASA(config-if)# ip address 192.168.30.1 255.255.255.0
+
+
+## ASA DHCP for inside
+
+ORACLEASA(config)#dhcpd address 192.168.20.100-192.168.20.150 inside
+ORACLEASA(config)#dhcpd enable inside
+ORACLEASA(config)#dhcpd dns 12.18.53.2
+
+
+## ASA NAT
+ORACLEASA(config)#object network INSIDE_NET
+ORACLEASA(config-network-object)# subnet 192.168.20.0 255.255.255.0
+ORACLEASA(config-network-object)# nat (inside,dmz) static 192.168.20.0
+ORACLEASA(config-network-object)#
+ORACLEASA(config-network-object)#object network DMZ_NET
+ORACLEASA(config-network-object)# subnet 192.168.30.0 255.255.255.0
+ORACLEASA(config-network-object)# nat (dmz,outside) dynamic interface
+ORACLEASA(config)#object network INSIDE_DMZ
+ORACLEASA(config-network-object)# subnet 192.168.20.0 255.255.255.0
+ORACLEASA(config-network-object)# nat (inside,dmz) static 192.168.20.0
+
+## ASA ACL
+ORACLEASA(config)#access-list OUTSIDE_IN extended permit tcp any host 192.168.30.200 eq 80
+ORACLEASA(config)#access-list OUTSIDE_IN extended permit tcp any host 192.168.30.201 eq 80
+ORACLEASA(config)#access-list OUTSIDE_IN extended permit tcp any host 192.168.30.202 eq 21
+ORACLEASA(config)#access-list OUTSIDE_IN extended permit udp any host 192.168.30.200 eq 53
+ORACLEASA(config)#access-group OUTSIDE_IN in interface outside
+
+
+--
+
+
+## Connect to OSPF
+ORACLEASA(config)#router ospf 222
+ORACLEASA(config-router)#network 192.168.20.0 255.255.255.0 area 222
+ORACLEASA(config-router)#network 192.168.30.0 255.255.255.0 area 222
+ORACLEASA(config-router)#network 17.17.17.0 255.255.255.252 area 222

@@ -9,4 +9,3 @@ ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.0 mask 255.255.255.25
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.12 mask 255.255.255.252
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.4 mask 255.255.255.252
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.8 mask 255.255.255.252
-ORACLE_BGP_AS_534_ROUTER_1(config-router)#redistribute ospf 1 match external 1 external 2 nssa-external 1 nssa-external 2
