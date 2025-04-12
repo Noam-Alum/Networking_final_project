@@ -1,7 +1,7 @@
 ORACLE_BGP_AS_534_ROUTER_1(config-if)#router ospf 1
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.4 0.0.0.3 area 0
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.8 0.0.0.3 area 0
-ORACLE_BGP_AS_534_ROUTER_1(config-router)# redistribute bgp 534 subnets
+ORACLE_BGP_AS_534_ROUTER_1(config-router)#redistribute bgp 534 metric 30 metric-type 1 subnets
 ORACLE_BGP_AS_534_ROUTER_1(config)#router bgp 534
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#neighbor 12.18.53.2 remote-as 34
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#neighbor 12.18.53.14 remote-as 622
@@ -9,4 +9,4 @@ ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.0 mask 255.255.255.25
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.12 mask 255.255.255.252
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.4 mask 255.255.255.252
 ORACLE_BGP_AS_534_ROUTER_1(config-router)#network 12.18.53.8 mask 255.255.255.252
-ORACLE_BGP_AS_534_ROUTER_1(config-router)#redistribute ospf 1
+ORACLE_BGP_AS_534_ROUTER_1(config-router)#redistribute ospf 1 match external 1 external 2 nssa-external 1 nssa-external 2
