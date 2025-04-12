@@ -1,5 +1,7 @@
 ORACLE_BGP_AS_34_ROUTER_1(config)#router bgp 34
 ORACLE_BGP_AS_34_ROUTER_1(config-router)#neighbor 12.18.34.2 remote-as 622
 ORACLE_BGP_AS_34_ROUTER_1(config-router)#neighbor 12.18.53.1 remote-as 534
+ORACLE_BGP_AS_34_ROUTER_1(config-router)#neighbor 12.18.34.6 remote-as 1294
+ORACLE_BGP_AS_34_ROUTER_1(config-router)#network 12.18.34.4 mask 255.255.255.252
 ORACLE_BGP_AS_34_ROUTER_1(config-router)#network 12.18.34.0 mask 255.255.255.252
 ORACLE_BGP_AS_34_ROUTER_1(config-router)#network 12.18.53.0 mask 255.255.255.252
