@@ -1,2 +1,0 @@
-ORACLE_OSPF_AREA_0_ROUTER_2(config)#router ospf 1
-ORACLE_OSPF_AREA_0_ROUTER_2(config-router)#network 12.18.53.4 0.0.0.3 area 0

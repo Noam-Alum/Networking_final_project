@@ -48,7 +48,8 @@ interface GigabitEthernet2/0
  ip address 12.18.53.9 255.255.255.252
 !
 interface GigabitEthernet3/0
- ip address 12.18.53.13 255.255.255.252
+ no ip address
+ shutdown
 !
 interface GigabitEthernet4/0
  no ip address
@@ -76,6 +77,7 @@ interface GigabitEthernet9/0
 !
 router ospf 1
  log-adjacency-changes
+ redistribute bgp 534 subnets 
  network 12.18.53.4 0.0.0.3 area 0
  network 12.18.53.8 0.0.0.3 area 0
 !
@@ -83,12 +85,8 @@ router bgp 534
  bgp log-neighbor-changes
  no synchronization
  neighbor 12.18.53.2 remote-as 34
- neighbor 12.18.53.14 remote-as 622
  network 12.18.53.0 mask 255.255.255.252
- network 12.18.53.12 mask 255.255.255.252
- network 12.18.53.4 mask 255.255.255.252
- network 12.18.53.8 mask 255.255.255.252
- redistribute ospf 1 match external 1 external 2 nssa-external 1 nssa-external 2 
+ redistribute ospf 1 
 !
 ip classless
 !

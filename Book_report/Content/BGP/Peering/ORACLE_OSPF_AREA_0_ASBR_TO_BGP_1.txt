@@ -1,0 +1,6 @@
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#router bgp 1334
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-router)#neighbor 12.18.53.5 remote-as 534
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-router)#network 12.18.53.4 mask 255.255.255.252
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-router)#redistribute ospf 1 match internal
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#router ospf 1
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-router)# redistribute bgp 1334 metric 100 metric-type 1 subnets

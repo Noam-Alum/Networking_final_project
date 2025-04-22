@@ -116,7 +116,15 @@ ip classless
 ip flow-export version 9
 !
 !
-access-list 100 permit ip 10.18.222.40 0.0.0.3 10.18.110.68 0.0.0.3
+access-list 100 permit ip 172.18.130.0 0.0.1.255 172.18.98.0 0.0.1.255
+access-list 100 permit ip 172.18.130.0 0.0.1.255 172.18.100.0 0.0.1.255
+access-list 100 permit ip 172.18.130.0 0.0.1.255 172.18.102.0 0.0.1.255
+access-list 100 permit ip 172.18.132.0 0.0.1.255 172.18.98.0 0.0.1.255
+access-list 100 permit ip 172.18.132.0 0.0.1.255 172.18.100.0 0.0.1.255
+access-list 100 permit ip 172.18.132.0 0.0.1.255 172.18.102.0 0.0.1.255
+access-list 100 permit ip 172.18.134.0 0.0.1.255 172.18.98.0 0.0.1.255
+access-list 100 permit ip 172.18.134.0 0.0.1.255 172.18.100.0 0.0.1.255
+access-list 100 permit ip 172.18.134.0 0.0.1.255 172.18.102.0 0.0.1.255
 !
 !
 !
