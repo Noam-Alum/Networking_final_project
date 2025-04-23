@@ -1,0 +1,11 @@
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#interface GigabitEthernet0/0
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-if)# ip nat inside
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-if)#interface GigabitEthernet1/0
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-if)# ip nat outside
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config-if)#exit
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#access-list 100 permit ip 10.18.0.0 0.0.0.15 any
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#access-list 100 permit ip 172.18.0.0 0.0.255.255 any
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#access-list 100 permit ip 192.168.18.0 0.0.0.15 any
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#access-list 100 permit ip 192.16.18.0 0.0.0.255 any
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#access-list 100 permit ip 192.32.18.0 0.0.0.255 any
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1(config)#ip nat inside source list 100 interface GigabitEthernet1/0 overload

@@ -2,8 +2,9 @@ ORACLE_BGP_AS_786_ROUTER_1(config-router)#router bgp 786
 ORACLE_BGP_AS_786_ROUTER_1(config-router)#neighbor 12.18.12.1 remote-as 129
 ORACLE_BGP_AS_786_ROUTER_1(config-router)#neighbor 12.18.62.5 remote-as 622
 ORACLE_BGP_AS_786_ROUTER_1(config-router)#network 12.18.12.0 mask 255.255.255.252
-ORACLE_BGP_AS_786_ROUTER_1(config-router)#network 14.18.78.0 mask 255.255.255.252
-ORACLE_BGP_AS_786_ROUTER_1(config-router)#network 12.18.53.4 mask 255.255.255.252
-ORACLE_BGP_AS_786_ROUTER_1(config-router)#network 12.18.53.8 mask 255.255.255.252
-ORACLE_BGP_AS_786_ROUTER_1(config-router)#network 12.18.53.12 mask 255.255.255.252
-ORACLE_BGP_AS_786_ROUTER_1(config-router)#network 12.18.53.16 mask 255.255.255.252
+ORACLE_BGP_AS_786_ROUTER_1(config-router)# network 14.18.78.0 mask 255.255.255.252
+ORACLE_BGP_AS_786_ROUTER_1(config-router)# network 14.18.78.4 mask 255.255.255.252
+ORACLE_BGP_AS_786_ROUTER_1(config-router)# network 14.18.78.8 mask 255.255.255.252
+ORACLE_BGP_AS_786_ROUTER_1(config-router)# network 14.18.78.12 mask 255.255.255.252
+ORACLE_BGP_AS_786_ROUTER_1(config-router)# network 14.18.78.16 mask 255.255.255.252
+ORACLE_BGP_AS_786_ROUTER_1(config-router)# network 12.18.62.4 mask 255.255.255.252

@@ -1,0 +1,4 @@
+Username,Password,Scope
+admin,1234,All devices
+noam,1234,ORACLE_BGP_AS_786_ROUTER_1
+yossi,1234,ORACLE_OSPF_AREA_110_ROUTER_2

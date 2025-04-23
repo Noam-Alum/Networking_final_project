@@ -1,0 +1,4 @@
+ORACLE_OSPF_AREA_0_ASBR_TO_BGP_1#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+udp 12.18.53.6:1036    172.18.84.2:1036   14.18.78.10:53     14.18.78.10:53
+tcp 12.18.53.6:1035    172.18.84.2:1035   14.18.78.2:80      14.18.78.2:80
