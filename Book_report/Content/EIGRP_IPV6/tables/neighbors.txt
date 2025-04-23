@@ -1,0 +1,8 @@
+ORACLE_EIGRP_IPV6_1#show ipv6 eigrp neighbors 
+IPv6-EIGRP neighbors for process 1
+H   Address                 Interface     Hold   Uptime   SRTT   RTO  Q  Seq
+                                          (sec)           (ms)       Cnt Num
+0   Link-local address:       Se0/0/1      14   00:01:03  40     1000  0   9
+    FE80::2                   
+1   Link-local address:       Se0/0/0      14   00:00:52  40     1000  0   14
+    FE80::1   

@@ -1,0 +1,19 @@
+ORACLE_EIGRP_IPV6_1#show ipv6 eigrp topology 
+IPv6-EIGRP Topology Table for AS 1/ID(3.3.3.3)
+
+Codes: P - Passive, A - Active, U - Update, Q - Query, R - Reply,
+       r - Reply status
+
+P 2001:DB8:ACAD:A::/64, 1 successors, FD is 2172416
+         via FE80::1 (2172416/5120), Serial0/0/0
+P 2001:DB8:ACAD:B::/64, 1 successors, FD is 2172416
+         via FE80::2 (2172416/5120), Serial0/0/1
+P 2001:DB8:ACAD:C::/64, 1 successors, FD is 5120
+         via Connected, GigabitEthernet0/0
+P 2001:DB8:ACAD:12::/64, 2 successors, FD is 2681856
+         via FE80::2 (2681856/2169856), Serial0/0/1
+         via FE80::1 (2681856/2169856), Serial0/0/0
+P 2001:DB8:ACAD:13::/64, 1 successors, FD is 2169856
+         via Connected, Serial0/0/0
+P 2001:DB8:ACAD:23::/64, 1 successors, FD is 2169856
+         via Connected, Serial0/0/1

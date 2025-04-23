@@ -1,0 +1,30 @@
+ORACLE_EIGRP_IPV6_1#show ipv6 route 
+IPv6 Routing Table - 10 entries
+Codes: C - Connected, L - Local, S - Static, R - RIP, B - BGP
+       U - Per-user Static route, M - MIPv6
+       I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF intra, OI - OSPF inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+       D - EIGRP, EX - EIGRP external
+D   2001:DB8:ACAD:A::/64 [90/2172416]
+     via FE80::1, Serial0/0/0
+D   2001:DB8:ACAD:B::/64 [90/2172416]
+     via FE80::2, Serial0/0/1
+C   2001:DB8:ACAD:C::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:ACAD:C::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+D   2001:DB8:ACAD:12::/64 [90/2681856]
+     via FE80::2, Serial0/0/1
+     via FE80::1, Serial0/0/0
+C   2001:DB8:ACAD:13::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:ACAD:13::3/128 [0/0]
+     via Serial0/0/0, receive
+C   2001:DB8:ACAD:23::/64 [0/0]
+     via Serial0/0/1, directly connected
+L   2001:DB8:ACAD:23::3/128 [0/0]
+     via Serial0/0/1, receive
+L   FF00::/8 [0/0]
+     via Null0, receive

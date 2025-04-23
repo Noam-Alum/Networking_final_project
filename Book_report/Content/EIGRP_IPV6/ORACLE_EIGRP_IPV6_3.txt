@@ -1,0 +1,22 @@
+ORACLE_EIGRP_IPV6_3(config)#interface GigabitEthernet0/0
+ORACLE_EIGRP_IPV6_3(config-if)# no ip address
+ORACLE_EIGRP_IPV6_3(config-if)# duplex auto
+ORACLE_EIGRP_IPV6_3(config-if)# speed auto
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 address FE80::1 link-local
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 address 2001:DB8:ACAD:A::/64 eui-64
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 eigrp 1
+ORACLE_EIGRP_IPV6_3(config-if)#interface Serial0/0/0
+ORACLE_EIGRP_IPV6_3(config-if)# no ip address
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 address FE80::1 link-local
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 address 2001:DB8:ACAD:12::/64 eui-64
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 eigrp 1
+ORACLE_EIGRP_IPV6_3(config-if)# clock rate 128000
+ORACLE_EIGRP_IPV6_3(config-if)#interface Serial0/0/1
+ORACLE_EIGRP_IPV6_3(config-if)# no ip address
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 address FE80::1 link-local
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 address 2001:DB8:ACAD:13::/64 eui-64
+ORACLE_EIGRP_IPV6_3(config-if)# ipv6 eigrp 1
+ORACLE_EIGRP_IPV6_3(config-if)#ipv6 router eigrp 1
+ORACLE_EIGRP_IPV6_3(config-rtr)# eigrp router-id 1.1.1.1
+ORACLE_EIGRP_IPV6_3(config-rtr)# no shutdown 
+ORACLE_EIGRP_IPV6_3(config-rtr)# passive-interface GigabitEthernet0/0
