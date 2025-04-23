@@ -1,0 +1,10 @@
+C:\>nslookup netflix.com
+
+Server: [14.18.78.10]
+Address:  14.18.78.10
+
+Non-authoritative answer:
+Name:   netflix.com
+Address:   14.18.78.6
+           
+C:\>
