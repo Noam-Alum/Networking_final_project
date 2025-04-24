@@ -6,5 +6,5 @@
 
 - [Book preview](https://heyzine.com/flip-book/938a41db93.html#page/178)
 
->[!IMPORTNAT]
+>[!IMPORTANT]
 > **Cisco Packet Tracer version:** `8.2.2.0400`
